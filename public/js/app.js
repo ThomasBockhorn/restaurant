@@ -2024,6 +2024,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37753,13 +37755,16 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "nav",
-    { staticClass: "navbar navbar-expand-lg navbar-dark fixed-top mt-4 " },
+    {
+      staticClass:
+        "navbar navbar-expand-lg navbar-dark fixed-top mt-5 mr-5 pt-5 ml-5"
+    },
     [
       _c("img", {
         staticClass: "navbar-brand",
         attrs: {
-          width: "120",
-          height: "40",
+          width: "180",
+          height: "60",
           src: _vm.logo_source,
           alt: "",
           loading: "lazy"
@@ -37875,6 +37880,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "d-flex m-4 p-2" },
     [
       _c("socialmedia-component"),
       _vm._v(" "),
@@ -37914,25 +37920,29 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "nav justify-content-end fixed-top" }, [
-      _c("li", { staticClass: "nav-item" }, [
-        _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-          _c("i", { staticClass: "fab fa-facebook-f" })
+    return _c(
+      "ul",
+      { staticClass: "nav justify-content-end fixed-top mt-5 mr-5" },
+      [
+        _c("li", { staticClass: "nav-item" }, [
+          _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+            _c("i", { staticClass: "fab fa-facebook-f" })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "nav-item" }, [
+          _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+            _c("i", { staticClass: "fab fa-twitter" })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "nav-item" }, [
+          _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+            _c("i", { staticClass: "fab fa-instagram" })
+          ])
         ])
-      ]),
-      _vm._v(" "),
-      _c("li", { staticClass: "nav-item" }, [
-        _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-          _c("i", { staticClass: "fab fa-twitter" })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("li", { staticClass: "nav-item" }, [
-        _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-          _c("i", { staticClass: "fab fa-instagram" })
-        ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true

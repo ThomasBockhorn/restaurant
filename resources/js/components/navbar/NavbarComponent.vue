@@ -1,9 +1,11 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mt-4 ">
+    <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top mt-5 mr-5 pt-5 ml-5"
+    >
         <img
             class="navbar-brand"
-            width="120"
-            height="40"
+            width="180"
+            height="60"
             :src="logo_source"
             alt=""
             loading="lazy"
