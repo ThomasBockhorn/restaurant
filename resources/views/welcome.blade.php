@@ -11,9 +11,10 @@
 
 <body>
     <div id="app">
-        <example-component></example-component>
+        <main-component></main-component>
     </div>
 </body>
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="https://kit.fontawesome.com/791afc6e4d.js" crossorigin="anonymous"></script>
 
 </html>
