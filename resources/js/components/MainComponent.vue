@@ -1,18 +1,13 @@
 <template>
-    <div>
-        <socialmedia-component></socialmedia-component>
-        <navbar-component></navbar-component>
-    </div>
+    <intro-component></intro-component>
 </template>
 
 <script>
-import navbarcomponent from "./navbar/NavbarComponent";
-import socialmediacomponent from "./socialmedia/SocialMediaComponent";
+import introcomponent from "./pages/IntroComponent";
 
 export default {
     components: {
-        "navbar-component": navbarcomponent,
-        "socialmedia-component": socialmediacomponent
+        "intro-component": introcomponent
     }
 };
 </script>

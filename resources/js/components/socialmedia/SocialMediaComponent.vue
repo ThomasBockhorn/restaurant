@@ -1,5 +1,5 @@
 <template>
-    <ul class="nav justify-content-end">
+    <ul class="nav justify-content-end fixed-top">
         <li class="nav-item">
             <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
         </li>
