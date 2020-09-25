@@ -1,9 +1,9 @@
 <template>
     <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top mt-5 mr-5 pt-5 ml-5"
+        class="navbar navbar-expand-lg navbar-dark fixed-top mt-5 mr-5 pt-5 ml-4 container"
     >
         <img
-            class="navbar-brand"
+            class="navbar-brand ml-5"
             width="180"
             height="60"
             :src="logo_source"
@@ -62,4 +62,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+a {
+    font-family: "Peddana", serif;
+    font-size: 1.5rem;
+    color: white !important;
+    margin-right: 1em;
+}
+</style>

@@ -30,4 +30,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+img {
+    filter: brightness(50%);
+}
+</style>

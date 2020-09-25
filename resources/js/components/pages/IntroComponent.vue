@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex m-4 p-2">
+    <div class="d-flex m-3">
         <socialmedia-component></socialmedia-component>
         <navbar-component></navbar-component>
         <carousel-component></carousel-component>
