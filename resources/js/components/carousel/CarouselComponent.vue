@@ -1,5 +1,5 @@
 <template>
-    <div class="carousel slide" data-ride="carousel">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img :src="salmon" class="d-block w-100" :alt="salmon" />
@@ -33,5 +33,13 @@ export default {
 <style scoped>
 img {
     filter: brightness(50%);
+}
+
+#carousel {
+    position: absolute;
+}
+
+#title {
+    z-index: 9;
 }
 </style>

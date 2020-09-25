@@ -4,10 +4,10 @@
     >
         <img
             class="navbar-brand ml-5"
-            width="180"
+            width="210"
             height="60"
             :src="logo_source"
-            alt=""
+            :alt="logo_source"
             loading="lazy"
         />
         <button
@@ -68,5 +68,6 @@ a {
     font-size: 1.5rem;
     color: white !important;
     margin-right: 1em;
+    text-transform: uppercase;
 }
 </style>
