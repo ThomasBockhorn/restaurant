@@ -16,4 +16,10 @@ h1 {
     margin-top: 12em;
     font-family: "Poiret One", cursive;
 }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        display: none;
+    }
+}
 </style>
