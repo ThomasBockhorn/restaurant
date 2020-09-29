@@ -1,18 +1,26 @@
 <template>
     <div id="carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" height="100%">
             <div class="carousel-item active">
-                <img :src="salmon" class="d-block w-100" :alt="salmon" />
-            </div>
-            <div class="carousel-item">
                 <img
-                    :src="restaurant"
-                    class="d-block w-100"
-                    :alt="restaurant"
+                    :src="imageOne"
+                    class="d-block w-100 img-fluid"
+                    :alt="imageOne"
                 />
             </div>
             <div class="carousel-item">
-                <img :src="barbecue" class="d-block w-100" :alt="barbecue" />
+                <img
+                    :src="imageTwo"
+                    class="d-block w-100 img-fluid"
+                    :alt="imageTwo"
+                />
+            </div>
+            <div class="carousel-item">
+                <img
+                    :src="imageThree"
+                    class="d-block w-100 img-fluid"
+                    :alt="imageThree"
+                />
             </div>
         </div>
     </div>
@@ -22,9 +30,9 @@
 export default {
     data: () => {
         return {
-            salmon: "/img/salmon.jpg",
-            restaurant: "/img/restaurant.jpg",
-            barbecue: "/img/barbecue.jpg"
+            imageOne: "/img/salmon.jpg",
+            imageTwo: "/img/restaurant.jpg",
+            imageThree: "/img/red-wine.jpg"
         };
     }
 };
@@ -33,13 +41,10 @@ export default {
 <style scoped>
 img {
     filter: brightness(50%);
+    height: auto;
 }
 
 #carousel {
     position: absolute;
-}
-
-#title {
-    z-index: 9;
 }
 </style>

@@ -1,15 +1,6 @@
 <template>
-    <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top mt-5 mr-5 pt-5 ml-4 container"
-    >
-        <img
-            class="navbar-brand ml-5"
-            width="210"
-            height="60"
-            :src="logo_source"
-            :alt="logo_source"
-            loading="lazy"
-        />
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mt-5 pt-5">
+        <span id="title" class="navbar-brand mb-0 h1 ml-3">Hercule</span>
         <button
             class="navbar-toggler"
             type="button"
@@ -23,7 +14,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto mr-1">
                 <li class="nav-item active">
                     <a class="nav-link" href="#"
                         >Home <span class="sr-only">(current)</span></a
@@ -56,7 +47,9 @@
 export default {
     data: () => {
         return {
-            logo_source: "/img/White logo - text background.png"
+            logo_source: "img/logo.jpg",
+            width: "100px",
+            height: "100px"
         };
     }
 };
@@ -69,5 +62,10 @@ a {
     color: white !important;
     margin-right: 1em;
     text-transform: uppercase;
+}
+
+#title {
+    font-family: "Poiret One", cursive;
+    font-size: 2em;
 }
 </style>

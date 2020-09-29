@@ -1,5 +1,5 @@
 <template>
-    <h1>Title</h1>
+    <h1>Welcome to Hercule!!</h1>
 </template>
 
 <script>
@@ -12,9 +12,8 @@ h1 {
     color: white;
     text-align: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
     margin-left: -50px;
-    margin-top: 300px;
+    margin-top: 12em;
+    font-family: "Poiret One", cursive;
 }
 </style>

@@ -1951,12 +1951,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      salmon: "/img/salmon.jpg",
-      restaurant: "/img/restaurant.jpg",
-      barbecue: "/img/barbecue.jpg"
+      imageOne: "/img/salmon.jpg",
+      imageTwo: "/img/restaurant.jpg",
+      imageThree: "/img/red-wine.jpg"
     };
   }
 });
@@ -2034,19 +2042,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      logo_source: "/img/White logo - text background.png"
+      logo_source: "img/logo.jpg",
+      width: "100px",
+      height: "100px"
     };
   }
 });
@@ -6549,7 +6550,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nimg[data-v-2bc2b00e] {\n    filter: brightness(50%);\n}\n#carousel[data-v-2bc2b00e] {\n    position: absolute;\n}\n#title[data-v-2bc2b00e] {\n    z-index: 9;\n}\n", ""]);
+exports.push([module.i, "\nimg[data-v-2bc2b00e] {\n    filter: brightness(50%);\n    height: auto;\n}\n#carousel[data-v-2bc2b00e] {\n    position: absolute;\n}\n", ""]);
 
 // exports
 
@@ -6568,7 +6569,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nh1[data-v-8d808b4e] {\n    z-index: 9;\n    color: white;\n    text-align: center;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    margin-left: -50px;\n    margin-top: 300px;\n}\n", ""]);
+exports.push([module.i, "\nh1[data-v-8d808b4e] {\n    z-index: 9;\n    color: white;\n    text-align: center;\n    position: absolute;\n    margin-left: -50px;\n    margin-top: 12em;\n    font-family: \"Poiret One\", cursive;\n}\n", ""]);
 
 // exports
 
@@ -6587,7 +6588,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\na[data-v-375cb08e] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5rem;\n    color: white !important;\n    margin-right: 1em;\n    text-transform: uppercase;\n}\n", ""]);
+exports.push([module.i, "\na[data-v-375cb08e] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5rem;\n    color: white !important;\n    margin-right: 1em;\n    text-transform: uppercase;\n}\n#title[data-v-375cb08e] {\n    font-family: \"Poiret One\", cursive;\n    font-size: 2em;\n}\n", ""]);
 
 // exports
 
@@ -38571,25 +38572,25 @@ var render = function() {
       attrs: { id: "carousel", "data-ride": "carousel" }
     },
     [
-      _c("div", { staticClass: "carousel-inner" }, [
+      _c("div", { staticClass: "carousel-inner", attrs: { height: "100%" } }, [
         _c("div", { staticClass: "carousel-item active" }, [
           _c("img", {
-            staticClass: "d-block w-100",
-            attrs: { src: _vm.salmon, alt: _vm.salmon }
+            staticClass: "d-block w-100 img-fluid",
+            attrs: { src: _vm.imageOne, alt: _vm.imageOne }
           })
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "carousel-item" }, [
           _c("img", {
-            staticClass: "d-block w-100",
-            attrs: { src: _vm.restaurant, alt: _vm.restaurant }
+            staticClass: "d-block w-100 img-fluid",
+            attrs: { src: _vm.imageTwo, alt: _vm.imageTwo }
           })
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "carousel-item" }, [
           _c("img", {
-            staticClass: "d-block w-100",
-            attrs: { src: _vm.barbecue, alt: _vm.barbecue }
+            staticClass: "d-block w-100 img-fluid",
+            attrs: { src: _vm.imageThree, alt: _vm.imageThree }
           })
         ])
       ])
@@ -38618,7 +38619,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Title")])
+  return _c("h1", [_vm._v("Welcome to Hercule!!")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -38642,29 +38643,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "nav",
-    {
-      staticClass:
-        "navbar navbar-expand-lg navbar-dark fixed-top mt-5 mr-5 pt-5 ml-4 container"
-    },
-    [
-      _c("img", {
-        staticClass: "navbar-brand ml-5",
-        attrs: {
-          width: "210",
-          height: "60",
-          src: _vm.logo_source,
-          alt: _vm.logo_source,
-          loading: "lazy"
-        }
-      }),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1)
-    ]
-  )
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
@@ -38672,76 +38651,86 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "button",
+      "nav",
       {
-        staticClass: "navbar-toggler",
-        attrs: {
-          type: "button",
-          "data-toggle": "collapse",
-          "data-target": "#navbarSupportedContent",
-          "aria-controls": "navbarSupportedContent",
-          "aria-expanded": "false",
-          "aria-label": "Toggle navigation"
-        }
-      },
-      [_c("span", { staticClass: "navbar-toggler-icon" })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "collapse navbar-collapse",
-        attrs: { id: "navbarSupportedContent" }
+        staticClass: "navbar navbar-expand-lg navbar-dark fixed-top mt-5 pt-5"
       },
       [
-        _c("ul", { staticClass: "navbar-nav ml-auto" }, [
-          _c("li", { staticClass: "nav-item active" }, [
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Home "),
-              _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
+        _c(
+          "span",
+          { staticClass: "navbar-brand mb-0 h1 ml-3", attrs: { id: "title" } },
+          [_vm._v("Hercule")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "navbar-toggler",
+            attrs: {
+              type: "button",
+              "data-toggle": "collapse",
+              "data-target": "#navbarSupportedContent",
+              "aria-controls": "navbarSupportedContent",
+              "aria-expanded": "false",
+              "aria-label": "Toggle navigation"
+            }
+          },
+          [_c("span", { staticClass: "navbar-toggler-icon" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse",
+            attrs: { id: "navbarSupportedContent" }
+          },
+          [
+            _c("ul", { staticClass: "navbar-nav ml-auto mr-1" }, [
+              _c("li", { staticClass: "nav-item active" }, [
+                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                  _vm._v("Home "),
+                  _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "nav-item" }, [
+                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                  _vm._v("Menu")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "nav-item" }, [
+                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                  _vm._v("Gallery")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "nav-item" }, [
+                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                  _vm._v("Reservation")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "nav-item" }, [
+                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                  _vm._v("Shop")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "nav-item" }, [
+                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                  _vm._v("Contact")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "nav-item" }, [
+                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                  _vm._v("Journal")
+                ])
+              ])
             ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Menu")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Gallery")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Reservation")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Shop")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Contact")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Journal")
-            ])
-          ])
-        ])
+          ]
+        )
       ]
     )
   }
