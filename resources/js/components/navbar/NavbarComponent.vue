@@ -68,4 +68,12 @@ a {
     font-family: "Poiret One", cursive;
     font-size: 2em;
 }
+
+.navbar-collapse {
+    background-color: black;
+}
+
+.navbar-collapse .navbar-nav {
+    padding-left: 1em;
+}
 </style>
