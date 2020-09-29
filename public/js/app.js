@@ -6569,7 +6569,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nh1[data-v-8d808b4e] {\n    z-index: 9;\n    color: white;\n    text-align: center;\n    position: absolute;\n    margin-left: -50px;\n    margin-top: 12em;\n    font-family: \"Poiret One\", cursive;\n}\n@media screen and (max-width: 768px) {\nh1[data-v-8d808b4e] {\n        display: none;\n}\n}\n", ""]);
+exports.push([module.i, "\nh1[data-v-8d808b4e] {\n    z-index: 9;\n    color: white;\n    text-align: center;\n    position: absolute;\n    margin-left: -50px;\n    margin-top: 9em;\n    font-family: \"Poiret One\", cursive;\n}\n@media screen and (max-width: 768px) {\nh1[data-v-8d808b4e] {\n        display: none;\n}\n}\n", ""]);
 
 // exports
 
