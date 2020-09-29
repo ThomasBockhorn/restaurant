@@ -20,4 +20,10 @@ export default {};
 i {
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    ul {
+        display: none;
+    }
+}
 </style>

@@ -6626,7 +6626,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\ni[data-v-bddba3ae] {\n    color: white;\n}\n", ""]);
+exports.push([module.i, "\ni[data-v-bddba3ae] {\n    color: white;\n}\n@media screen and (max-width: 768px) {\nul[data-v-bddba3ae] {\n        display: none;\n}\n}\n", ""]);
 
 // exports
 
