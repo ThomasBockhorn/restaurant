@@ -1,5 +1,9 @@
 <template>
-    <h1>Welcome to Hercule!!</h1>
+    <div class="header d-flex flex-column">
+        <h1>Welcome to Hercule</h1>
+
+        <h3>A fine dining experience</h3>
+    </div>
 </template>
 
 <script>
@@ -7,18 +11,20 @@ export default {};
 </script>
 
 <style scoped>
-h1 {
+.header {
     z-index: 9;
     color: white;
     text-align: center;
     position: absolute;
-    margin-left: -50px;
-    margin-top: 9em;
     font-family: "Poiret One", cursive;
+}
+.header {
+    margin-top: 20em;
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
+    h1,
+    h3 {
         display: none;
     }
 }

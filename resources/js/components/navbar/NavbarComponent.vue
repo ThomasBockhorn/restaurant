@@ -17,7 +17,8 @@
             <ul class="navbar-nav ml-auto mr-1">
                 <li class="nav-item active">
                     <a class="nav-link" href="#"
-                        >Home <span class="sr-only">(current)</span></a
+                        >Home {{ scrollLocation }}
+                        <span class="sr-only">(current)</span></a
                     >
                 </li>
                 <li class="nav-item">
@@ -49,8 +50,23 @@ export default {
         return {
             logo_source: "img/logo.jpg",
             width: "100px",
-            height: "100px"
+            height: "100px",
+
+            //scroll position
+            scrollLocation: null
         };
+    },
+    method: {
+        //This will find the scroll position on the Y axis
+        scrollPosition() {
+            console.log("this works");
+        }
+    },
+    created() {
+        window.addEventListener("scroll", this.scrollPosition);
+    },
+    destroy() {
+        window.removeEventListener("scroll", this.scrollPosition);
     }
 };
 </script>
@@ -59,7 +75,6 @@ export default {
 a {
     font-family: "Peddana", serif;
     font-size: 1.5rem;
-    color: white !important;
     margin-right: 1em;
     text-transform: uppercase;
 }
@@ -69,11 +84,17 @@ a {
     font-size: 2em;
 }
 
-.navbar-collapse {
-    background-color: black;
-}
-
 .navbar-collapse .navbar-nav {
     padding-left: 1em;
+}
+
+.navbar-background {
+    background-color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+        background-color: white;
+    }
 }
 </style>
