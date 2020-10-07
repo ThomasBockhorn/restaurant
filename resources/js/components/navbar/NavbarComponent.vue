@@ -1,5 +1,12 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mt-5 pt-5">
+    <nav
+        class="navbar navbar-expand-lg fixed-top pt-5"
+        :class="{
+            'navbar-dark': navbarDark,
+            'navbar-light': navbarLight,
+            'background-color': backgroundColor
+        }"
+    >
         <span id="title" class="navbar-brand mb-0 h1 ml-3">Hercule</span>
         <button
             class="navbar-toggler"
@@ -17,8 +24,7 @@
             <ul class="navbar-nav ml-auto mr-1">
                 <li class="nav-item active">
                     <a class="nav-link" href="#"
-                        >Home {{ scrollLocation }}
-                        <span class="sr-only">(current)</span></a
+                        >Home <span class="sr-only">(current)</span></a
                     >
                 </li>
                 <li class="nav-item">
@@ -52,21 +58,33 @@ export default {
             width: "100px",
             height: "100px",
 
-            //scroll position
-            scrollLocation: null
+            //Y position
+            yPosition: "null",
+
+            //class toggle
+            navbarLight: false,
+            backgroundColor: false,
+            navbarDark: true
         };
     },
-    method: {
-        //This will find the scroll position on the Y axis
-        scrollPosition() {
-            console.log("this works");
+    methods: {
+        changeBackground() {
+            if (this.yPosition > 50) {
+                this.navbarLight = true;
+                this.navbarDark = false;
+                this.backgroundColor = true;
+            } else {
+                this.navbarLight = false;
+                this.navbarDark = true;
+                this.backgroundColor = false;
+            }
         }
     },
     created() {
-        window.addEventListener("scroll", this.scrollPosition);
-    },
-    destroy() {
-        window.removeEventListener("scroll", this.scrollPosition);
+        document.addEventListener("scroll", () => {
+            this.yPosition = window.scrollY;
+            this.changeBackground();
+        });
     }
 };
 </script>
@@ -88,7 +106,7 @@ a {
     padding-left: 1em;
 }
 
-.navbar-background {
+.background-color {
     background-color: white !important;
 }
 

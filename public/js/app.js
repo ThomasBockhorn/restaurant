@@ -1987,7 +1987,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2047,27 +2046,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       logo_source: "img/logo.jpg",
       width: "100px",
       height: "100px",
-      //scroll position
-      scrollLocation: null
+      //Y position
+      yPosition: "null",
+      //class toggle
+      navbarLight: false,
+      backgroundColor: false,
+      navbarDark: true
     };
   },
-  method: {
-    //This will find the scroll position on the Y axis
-    scrollPosition: function scrollPosition() {
-      console.log("this works");
+  methods: {
+    changeBackground: function changeBackground() {
+      if (this.yPosition > 50) {
+        this.navbarLight = true;
+        this.navbarDark = false;
+        this.backgroundColor = true;
+      } else {
+        this.navbarLight = false;
+        this.navbarDark = true;
+        this.backgroundColor = false;
+      }
     }
   },
   created: function created() {
-    window.addEventListener("scroll", this.scrollPosition);
-  },
-  destroy: function destroy() {
-    window.removeEventListener("scroll", this.scrollPosition);
+    var _this = this;
+
+    document.addEventListener("scroll", function () {
+      _this.yPosition = window.scrollY;
+
+      _this.changeBackground();
+    });
   }
 });
 
@@ -6607,7 +6626,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\na[data-v-375cb08e] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5rem;\n    margin-right: 1em;\n    text-transform: uppercase;\n}\n#title[data-v-375cb08e] {\n    font-family: \"Poiret One\", cursive;\n    font-size: 2em;\n}\n.navbar-collapse .navbar-nav[data-v-375cb08e] {\n    padding-left: 1em;\n}\n.navbar-background[data-v-375cb08e] {\n    background-color: white !important;\n}\n@media screen and (max-width: 768px) {\n.navbar-collapse[data-v-375cb08e] {\n        background-color: white;\n}\n}\n", ""]);
+exports.push([module.i, "\na[data-v-375cb08e] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5rem;\n    margin-right: 1em;\n    text-transform: uppercase;\n}\n#title[data-v-375cb08e] {\n    font-family: \"Poiret One\", cursive;\n    font-size: 2em;\n}\n.navbar-collapse .navbar-nav[data-v-375cb08e] {\n    padding-left: 1em;\n}\n.background-color[data-v-375cb08e] {\n    background-color: white !important;\n}\n@media screen and (max-width: 768px) {\n.navbar-collapse[data-v-375cb08e] {\n        background-color: white;\n}\n}\n", ""]);
 
 // exports
 
@@ -38675,7 +38694,14 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "nav",
-    { staticClass: "navbar navbar-expand-lg navbar-dark fixed-top mt-5 pt-5" },
+    {
+      staticClass: "navbar navbar-expand-lg fixed-top pt-5",
+      class: {
+        "navbar-dark": _vm.navbarDark,
+        "navbar-light": _vm.navbarLight,
+        "background-color": _vm.backgroundColor
+      }
+    },
     [
       _c(
         "span",
@@ -38685,39 +38711,7 @@ var render = function() {
       _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "collapse navbar-collapse",
-          attrs: { id: "navbarSupportedContent" }
-        },
-        [
-          _c("ul", { staticClass: "navbar-nav ml-auto mr-1" }, [
-            _c("li", { staticClass: "nav-item active" }, [
-              _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                _vm._v(
-                  "Home " +
-                    _vm._s(_vm.scrollLocation) +
-                    "\n                    "
-                ),
-                _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
-              ])
-            ]),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _vm._m(2),
-            _vm._v(" "),
-            _vm._m(3),
-            _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _vm._m(5),
-            _vm._v(" "),
-            _vm._m(6)
-          ])
-        ]
-      )
+      _vm._m(1)
     ]
   )
 }
@@ -38746,61 +38740,59 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Menu")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Gallery")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Reservation")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Shop")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Contact")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Journal")
-      ])
-    ])
+    return _c(
+      "div",
+      {
+        staticClass: "collapse navbar-collapse",
+        attrs: { id: "navbarSupportedContent" }
+      },
+      [
+        _c("ul", { staticClass: "navbar-nav ml-auto mr-1" }, [
+          _c("li", { staticClass: "nav-item active" }, [
+            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+              _vm._v("Home "),
+              _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "nav-item" }, [
+            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+              _vm._v("Menu")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "nav-item" }, [
+            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+              _vm._v("Gallery")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "nav-item" }, [
+            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+              _vm._v("Reservation")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "nav-item" }, [
+            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+              _vm._v("Shop")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "nav-item" }, [
+            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+              _vm._v("Contact")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "nav-item" }, [
+            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+              _vm._v("Journal")
+            ])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -38873,7 +38865,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "ul",
-      { staticClass: "nav justify-content-end fixed-top mt-5 mr-5" },
+      { staticClass: "nav justify-content-end fixed-top pb-4 mt-3 pt-1 mr-5" },
       [
         _c("li", { staticClass: "nav-item" }, [
           _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [

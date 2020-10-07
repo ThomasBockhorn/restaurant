@@ -1,7 +1,6 @@
 <template>
     <div class="header d-flex flex-column">
         <h1>Welcome to Hercule</h1>
-
         <h3>A fine dining experience</h3>
     </div>
 </template>
