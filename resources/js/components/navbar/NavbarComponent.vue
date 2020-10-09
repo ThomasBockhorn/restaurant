@@ -108,6 +108,7 @@ a {
 
 .background-color {
     background-color: white !important;
+    transition: background-color 500ms linear;
 }
 
 @media screen and (max-width: 768px) {
