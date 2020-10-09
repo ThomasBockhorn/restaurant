@@ -6599,7 +6599,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\na[data-v-375cb08e] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5rem;\n    margin-right: 1em;\n    text-transform: uppercase;\n}\n#title[data-v-375cb08e] {\n    font-family: \"Poiret One\", cursive;\n    font-size: 2em;\n}\n.navbar-collapse .navbar-nav[data-v-375cb08e] {\n    padding-left: 1em;\n}\n.background-color[data-v-375cb08e] {\n    background-color: white !important;\n    transition: background-color 500ms linear;\n}\n@media screen and (max-width: 768px) {\n.navbar-collapse[data-v-375cb08e] {\n        background-color: white;\n}\n}\n", ""]);
+exports.push([module.i, "\na[data-v-375cb08e] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5rem;\n    margin-right: 1em;\n    text-transform: uppercase;\n}\n#title[data-v-375cb08e] {\n    font-family: \"Poiret One\", cursive;\n    font-size: 2em;\n}\n.navbar-collapse .navbar-nav[data-v-375cb08e] {\n    padding-left: 1em;\n}\n.background-color[data-v-375cb08e] {\n    background-color: white !important;\n    transition: background-color 250ms linear;\n}\n@media screen and (max-width: 768px) {\n.navbar-collapse[data-v-375cb08e] {\n        background-color: white;\n}\n}\n", ""]);
 
 // exports
 
