@@ -115,5 +115,8 @@ a {
     .navbar-collapse {
         background-color: white;
     }
+    .navbar-collapse > ul > li > a {
+        color: black !important;
+    }
 }
 </style>
