@@ -4,7 +4,8 @@
         :class="{
             'navbar-dark': navbarDark,
             'navbar-light': navbarLight,
-            'background-color': backgroundColor
+            'background-color': backgroundColor,
+            'box-shadow': boxShadow
         }"
     >
         <span id="title" class="navbar-brand mb-0 h1 ml-3">Hercule</span>
@@ -64,19 +65,24 @@ export default {
             //class toggle
             navbarLight: false,
             backgroundColor: false,
-            navbarDark: true
+            navbarDark: true,
+
+            //box-shadow toggle
+            boxShadow: false
         };
     },
     methods: {
         changeBackground() {
-            if (this.yPosition > 50) {
+            if (this.yPosition > 80) {
                 this.navbarLight = true;
                 this.navbarDark = false;
                 this.backgroundColor = true;
+                this.boxShadow = true;
             } else {
                 this.navbarLight = false;
                 this.navbarDark = true;
                 this.backgroundColor = false;
+                this.boxShadow = false;
             }
         }
     },
@@ -90,6 +96,11 @@ export default {
 </script>
 
 <style scoped>
+.box-shadow {
+    -webkit-box-shadow: -1px 2px 50px -25px #000000;
+    box-shadow: -1px 2px 50px -25px #000000;
+}
+
 a {
     font-family: "Peddana", serif;
     font-size: 1.5rem;

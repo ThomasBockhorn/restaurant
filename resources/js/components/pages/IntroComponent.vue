@@ -8,7 +8,7 @@
             </div>
             <carousel-component></carousel-component>
         </header>
-        <section class="m-3">
+        <section>
             <about-component></about-component>
         </section>
     </div>
