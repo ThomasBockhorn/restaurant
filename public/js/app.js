@@ -38734,7 +38734,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "carousel slide",
+      staticClass: "carousel slide ml-1",
       attrs: { id: "carousel", "data-ride": "carousel" }
     },
     [
