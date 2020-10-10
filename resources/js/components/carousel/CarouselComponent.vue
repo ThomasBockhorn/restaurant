@@ -43,8 +43,4 @@ img {
     filter: brightness(50%);
     height: auto;
 }
-
-#carousel {
-    position: absolute;
-}
 </style>
