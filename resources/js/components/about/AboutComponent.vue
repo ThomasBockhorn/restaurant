@@ -1,20 +1,26 @@
 <template>
-    <div id="about" class="d-flex justify-content-center mt-5">
-        <div class="d-inline text ml-5 mt-5 d-flex flex-column">
-            <div class="mt-5 d-flex flex-column align-items-center">
+    <div id="about" class="d-flex flex-md-row flex-column-reverse mt-5">
+        <div class="text d-flex flex-column w-100">
+            <div class=" d-flex flex-column align-items-center w-100">
                 <h1>Discover</h1>
                 <h2>Our Story</h2>
                 <hr class="style-seven" />
             </div>
-            <p class="mt-5 ml-2">
+            <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
                 quasi ratione dolorem voluptatibus, ea perspiciatis tempora
                 aliquid voluptate fugit suscipit doloribus incidunt quos
                 doloremque at vel? Cupiditate aperiam excepturi quidem.
             </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Delectus, omnis debitis odio, magni cum aut voluptate
+                perferendis dicta sed corporis libero, quasi nemo dolores
+                suscipit. Sunt perspiciatis ad dolorem voluptatibus!
+            </p>
         </div>
-        <div class="d-inline image mr-5 mt-5">
-            <img class="mt-5" :src="imageOne" :alt="imageOne" width="100%" />
+        <div class="image m-2">
+            <img :src="imageOne" :alt="imageOne" width="100%" />
         </div>
     </div>
 </template>
@@ -30,19 +36,9 @@ export default {
 </script>
 
 <style scoped>
-.image,
-.text {
-    width: 50%;
-    height: 100%;
-}
-
 h1,
 h2 {
     font-family: "Poiret One", cursive;
-}
-
-h1 {
-    font-size: 7em;
 }
 
 p {
@@ -54,8 +50,8 @@ p {
 
 .style-seven {
     overflow: visible; /* For IE */
-    height: 30px;
-    width: 25em;
+    height: 2em;
+    width: 20em;
     border-style: solid;
     border-color: black;
     border-width: 1px 0 0 0;

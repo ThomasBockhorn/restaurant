@@ -1952,6 +1952,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -6616,7 +6622,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.image[data-v-415e5a9d],\n.text[data-v-415e5a9d] {\n    width: 50%;\n    height: 100%;\n}\nh1[data-v-415e5a9d],\nh2[data-v-415e5a9d] {\n    font-family: \"Poiret One\", cursive;\n}\nh1[data-v-415e5a9d] {\n    font-size: 7em;\n}\np[data-v-415e5a9d] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-415e5a9d] {\n    overflow: visible; /* For IE */\n    height: 30px;\n    width: 25em;\n    border-style: solid;\n    border-color: black;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-415e5a9d]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: black;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\nh1[data-v-415e5a9d],\nh2[data-v-415e5a9d] {\n    font-family: \"Poiret One\", cursive;\n}\np[data-v-415e5a9d] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-415e5a9d] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: black;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-415e5a9d]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: black;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -38683,15 +38689,14 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "d-flex justify-content-center mt-5",
+      staticClass: "d-flex flex-md-row flex-column-reverse mt-5",
       attrs: { id: "about" }
     },
     [
       _vm._m(0),
       _vm._v(" "),
-      _c("div", { staticClass: "d-inline image mr-5 mt-5" }, [
+      _c("div", { staticClass: "image m-2" }, [
         _c("img", {
-          staticClass: "mt-5",
           attrs: { src: _vm.imageOne, alt: _vm.imageOne, width: "100%" }
         })
       ])
@@ -38703,29 +38708,31 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "d-inline text ml-5 mt-5 d-flex flex-column" },
-      [
-        _c(
-          "div",
-          { staticClass: "mt-5 d-flex flex-column align-items-center" },
-          [
-            _c("h1", [_vm._v("Discover")]),
-            _vm._v(" "),
-            _c("h2", [_vm._v("Our Story")]),
-            _vm._v(" "),
-            _c("hr", { staticClass: "style-seven" })
-          ]
-        ),
-        _vm._v(" "),
-        _c("p", { staticClass: "mt-5 ml-2" }, [
-          _vm._v(
-            "\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non\n            quasi ratione dolorem voluptatibus, ea perspiciatis tempora\n            aliquid voluptate fugit suscipit doloribus incidunt quos\n            doloremque at vel? Cupiditate aperiam excepturi quidem.\n        "
-          )
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "text d-flex flex-column w-100" }, [
+      _c(
+        "div",
+        { staticClass: " d-flex flex-column align-items-center w-100" },
+        [
+          _c("h1", [_vm._v("Discover")]),
+          _vm._v(" "),
+          _c("h2", [_vm._v("Our Story")]),
+          _vm._v(" "),
+          _c("hr", { staticClass: "style-seven" })
+        ]
+      ),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non\n            quasi ratione dolorem voluptatibus, ea perspiciatis tempora\n            aliquid voluptate fugit suscipit doloribus incidunt quos\n            doloremque at vel? Cupiditate aperiam excepturi quidem.\n        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n            Lorem ipsum dolor sit, amet consectetur adipisicing elit.\n            Delectus, omnis debitis odio, magni cum aut voluptate\n            perferendis dicta sed corporis libero, quasi nemo dolores\n            suscipit. Sunt perspiciatis ad dolorem voluptatibus!\n        "
+        )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -38752,7 +38759,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "carousel slide ml-1",
+      staticClass: "carousel slide",
       attrs: { id: "carousel", "data-ride": "carousel" }
     },
     [
@@ -38880,7 +38887,7 @@ var staticRenderFns = [
           "aria-label": "Toggle navigation"
         }
       },
-      [_c("span", { staticClass: "navbar-toggler-icon" })]
+      [_c("span", { staticClass: "navbar-toggler-icon ml-1" })]
     )
   },
   function() {

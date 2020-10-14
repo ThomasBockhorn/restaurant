@@ -1,5 +1,5 @@
 <template>
-    <div id="carousel" class="carousel slide ml-1" data-ride="carousel">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" height="100%">
             <div class="carousel-item active">
                 <img
