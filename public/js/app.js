@@ -2058,7 +2058,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      movie: "/mov/Restaurant.mp4"
+    };
+  }
+});
 
 /***/ }),
 
@@ -6710,7 +6728,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#header[data-v-538758ce] {\n    width: 100%;\n    height: 100%;\n    margin-top: 5em;\n}\n#player[data-v-538758ce] {\n    position: relative;\n    height: 100%;\n    width: 100%;\n    overflow: hidden;\n}\n#header[data-v-538758ce] {\n    position: absolute;\n}\nvideo[data-v-538758ce] {\n    outline: none;\n    filter: brightness(50%);\n    width: 100%;\n    height: 80vh;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\nh1[data-v-538758ce],\nh2[data-v-538758ce] {\n    color: white;\n    font-family: \"Poiret One\", cursive;\n    z-index: 9;\n}\n", ""]);
+exports.push([module.i, "\n#header[data-v-538758ce] {\n    width: 100%;\n    height: 100%;\n    margin-top: 5em;\n}\n#player[data-v-538758ce] {\n    position: relative;\n    height: 100%;\n    width: 100%;\n    overflow: hidden;\n}\n#header[data-v-538758ce] {\n    position: absolute;\n}\nvideo[data-v-538758ce] {\n    outline: none;\n    filter: brightness(50%);\n    width: 100%;\n    height: 80vh;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\nh1[data-v-538758ce],\nh2[data-v-538758ce],\nh3[data-v-538758ce],\nh4[data-v-538758ce] {\n    color: white;\n    font-family: \"Poiret One\", cursive;\n    z-index: 9;\n}\nh3[data-v-538758ce] {\n    margin: 1em;\n}\n#phone[data-v-538758ce] {\n    letter-spacing: 0.5em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-538758ce] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 35em;\n    border-style: solid;\n    border-color: white;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n    z-index: 9;\n}\n.style-seven[data-v-538758ce]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: white;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -38932,11 +38950,7 @@ var render = function() {
         attrs: { loop: "", playsinline: "", autoplay: "", muted: "" },
         domProps: { muted: true }
       },
-      [
-        _c("source", {
-          attrs: { src: "/mov/Restaurant.mp4", type: "video/mp4" }
-        })
-      ]
+      [_c("source", { attrs: { src: _vm.movie, type: "video/mp4" } })]
     ),
     _vm._v(" "),
     _vm._m(0)
@@ -38956,7 +38970,25 @@ var staticRenderFns = [
       [
         _c("h1", [_vm._v("Hours")]),
         _vm._v(" "),
-        _c("h2", [_vm._v("Call for Reservations")])
+        _c("h2", [_vm._v("Call for Reservations")]),
+        _vm._v(" "),
+        _c("hr", { staticClass: "style-seven" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "d-flex" }, [
+          _c("div", { staticClass: "d-flex flex-column align-items-center" }, [
+            _c("h3", [_vm._v("Sunday to Tuesday")]),
+            _vm._v(" "),
+            _c("h4", [_vm._v("8 am to 9 pm")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "d-flex flex-column align-items-center" }, [
+            _c("h3", [_vm._v("Wednesday to Saturday")]),
+            _vm._v(" "),
+            _c("h4", [_vm._v("7 am to 9 pm")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("h3", { attrs: { id: "phone" } }, [_vm._v("256.679.8939")])
       ]
     )
   }
