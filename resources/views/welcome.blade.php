@@ -11,7 +11,7 @@
     <title>Restaurant Model</title>
 </head>
 
-<body style="height: vh;  width: auto;">
+<body>
     <div id="app">
         <main-component></main-component>
     </div>
