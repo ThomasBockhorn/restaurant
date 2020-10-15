@@ -36,7 +36,7 @@ video {
     outline: none;
     filter: brightness(50%);
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
 }
 

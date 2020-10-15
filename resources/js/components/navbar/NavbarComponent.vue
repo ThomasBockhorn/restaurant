@@ -122,6 +122,13 @@ a {
     transition: background-color 250ms linear;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 @media screen and (max-width: 768px) {
     .navbar-collapse {
         background-color: white;
