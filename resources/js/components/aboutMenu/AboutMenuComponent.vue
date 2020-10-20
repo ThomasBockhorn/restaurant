@@ -1,15 +1,15 @@
 <template>
-    <div class="d-flex flex-md-row flex-column mt-5">
-        <div class="m-2">
+    <div class="d-flex flex-md-row flex-column mt-5 mb-5">
+        <div id="image" class="m-2">
             <img
                 :src="aboutmenuimage"
                 :alt="aboutmenuimage"
                 width="100%"
-                height="60%"
+                height="100%"
             />
         </div>
-        <div class="d-flex flex-column w-100 m-2">
-            <div class="d-flex align-items-center flex-column w-100 mb-5">
+        <div class="d-flex flex-column w-100 ml-2 mt-0 mb-auto">
+            <div class="d-flex align-items-center flex-column w-100">
                 <h1>About Our Menu</h1>
                 <h2>Our Cuisine Philosophy</h2>
                 <hr class="style-seven" />
@@ -50,6 +50,10 @@ h2 {
 p {
     font-family: "Peddana", serif;
     font-size: 1.5em;
+}
+
+#image {
+    height: 40em;
 }
 
 /* Flaired edges, by Tomas Theunissen */

@@ -36,7 +36,7 @@ export default {
 #header {
     width: 100%;
     height: 100%;
-    margin-top: 5em;
+    margin-top: 1em;
 }
 
 #player {

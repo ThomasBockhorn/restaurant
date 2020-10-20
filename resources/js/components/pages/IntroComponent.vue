@@ -17,6 +17,9 @@
         <section id="aboutmenu" class="m-3">
             <aboutmenu-component></aboutmenu-component>
         </section>
+        <section id="specials">
+            <specialmenu-component></specialmenu-component>
+        </section>
     </div>
 </template>
 
@@ -28,6 +31,7 @@ import headercomponent from "../header/HeaderComponent";
 import aboutcomponent from "../about/AboutComponent";
 import hourscomponent from "../hours/HoursComponent";
 import aboutmenucomponent from "../aboutMenu/AboutMenuComponent";
+import specialmenucomponent from "../specialmenu/SpecialMenuComponent";
 
 export default {
     components: {
@@ -37,7 +41,8 @@ export default {
         "header-component": headercomponent,
         "about-component": aboutcomponent,
         "hours-component": hourscomponent,
-        "aboutmenu-component": aboutmenucomponent
+        "aboutmenu-component": aboutmenucomponent,
+        "specialmenu-component": specialmenucomponent
     }
 };
 </script>
