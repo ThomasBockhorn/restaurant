@@ -1,6 +1,6 @@
 <template>
     <div id="about" class="d-flex flex-md-row flex-column-reverse mt-5">
-        <div class="text d-flex flex-column w-100">
+        <div class="d-flex flex-column w-100">
             <div class=" d-flex flex-column align-items-center w-100">
                 <h1>Discover</h1>
                 <h2>Our Story</h2>
@@ -19,7 +19,7 @@
                 suscipit. Sunt perspiciatis ad dolorem voluptatibus!
             </p>
         </div>
-        <div class="image m-2">
+        <div class="m-2">
             <img :src="imageOne" :alt="imageOne" width="100%" />
         </div>
     </div>

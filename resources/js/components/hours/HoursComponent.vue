@@ -80,7 +80,7 @@ h3 {
 .style-seven {
     overflow: visible; /* For IE */
     height: 2em;
-    width: 35em;
+    width: 20em;
     border-style: solid;
     border-color: white;
     border-width: 1px 0 0 0;

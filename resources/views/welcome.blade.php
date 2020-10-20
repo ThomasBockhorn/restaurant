@@ -9,6 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
     <title>Restaurant Model</title>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    </style>
 </head>
 
 <body>
