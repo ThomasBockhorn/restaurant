@@ -2322,6 +2322,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -6918,7 +6947,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#wrapper[data-v-6120d4a7] {\n    height: 100vh;\n}\n.specialMenu[data-v-6120d4a7] {\n    background-image: url(\"/img/drink.jpg\");\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\nh1[data-v-6120d4a7] {\n    color: white;\n    font-family: \"Poiret One\", cursive;\n    margin-top: 3em;\n    z-index: 9;\n}\n", ""]);
+exports.push([module.i, "\n#wrapper[data-v-6120d4a7] {\n    height: 100vh;\n}\n.specialMenu[data-v-6120d4a7] {\n    background-image: url(\"/img/drink.jpg\");\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    height: 100vh;\n}\nh1[data-v-6120d4a7],\nh2[data-v-6120d4a7],\n.menuItem[data-v-6120d4a7] {\n    color: white;\n    font-family: \"Poiret One\", cursive;\n}\nspan[data-v-6120d4a7]::after {\n    content: \"..........\";\n}\n@media only screen and (max-width: 425px) {\n.specialMenu[data-v-6120d4a7] {\n        background-attachment: scroll;\n}\n.stopParallax[data-v-6120d4a7] {\n        display: none;\n}\nh1[data-v-6120d4a7],\n    h2[data-v-6120d4a7],\n    h3[data-v-6120d4a7],\n    h4[data-v-6120d4a7] {\n        font-size: 1em;\n}\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-6120d4a7] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: white;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-6120d4a7]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: white;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -39536,13 +39565,90 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "w-100", attrs: { id: "wrapper" } }, [
-      _c("div", { staticClass: "specialMenu" }),
+      _c("div", { staticClass: "specialMenu stopParallax" }),
       _vm._v(" "),
-      _c("div", { staticClass: "d-flex justify-content-center specialMenu" }, [
-        _c("h1", { attrs: { id: "text" } }, [_vm._v("Specials for Today")])
-      ]),
+      _c(
+        "div",
+        {
+          staticClass: "d-flex align-items-center flex-column w-100 specialMenu"
+        },
+        [
+          _c("div", { staticClass: "menuItem" }, [
+            _c(
+              "div",
+              {
+                staticClass: "d-flex align-items-center flex-column w-100",
+                attrs: { id: "header" }
+              },
+              [
+                _c("h1", [_vm._v("Specials for Today")]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("Try one of these delectable dishes")]),
+                _vm._v(" "),
+                _c("hr", { staticClass: "style-seven" })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Monday")]),
+            _vm._v(" "),
+            _c("h4", [
+              _vm._v("Roasted Salmon with Hollandaise sauce"),
+              _c("span"),
+              _vm._v("$34")
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Tuesday")]),
+            _vm._v(" "),
+            _c("h4", [
+              _vm._v("Swordfish au poivre"),
+              _c("span"),
+              _vm._v("$56")
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Wednesday")]),
+            _vm._v(" "),
+            _c("h4", [_vm._v("Tuna tartare"), _c("span"), _vm._v("$45")]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Thursday")]),
+            _vm._v(" "),
+            _c("h4", [
+              _vm._v("Königsberger klopse"),
+              _c("span"),
+              _vm._v("$36")
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Friday")]),
+            _vm._v(" "),
+            _c("h4", [_vm._v("Maultaschen"), _c("span"), _vm._v("$26")]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Saturday")]),
+            _vm._v(" "),
+            _c("h4", [_vm._v("Onion tart"), _c("span"), _vm._v("$13")]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Sunday")]),
+            _vm._v(" "),
+            _c("h4", [
+              _vm._v("Steak au poivre with crisp potatoes"),
+              _c("span"),
+              _vm._v("$50")
+            ])
+          ])
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "specialMenu" })
+      _c("div", { staticClass: "specialMenu stopParallax" })
     ])
   }
 ]
