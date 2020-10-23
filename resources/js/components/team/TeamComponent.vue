@@ -1,6 +1,6 @@
 <template>
   <div id="team">
-    <div class="d-flex flex-column align-items-center mt-5 pt-5">
+    <div class="d-flex flex-column justify-content-center align-items-center pt-5">
       <h1>Our Team</h1>
       <h2>Our High-Class Professional Service</h2>
       <hr class="style-seven" />
@@ -10,22 +10,24 @@
         class="intro"
       >Our top-quality chefs are here to delight and serve you. Our food is second to none.</p>
     </div>
-    <div class="d-flex align-items-center mt-4 pt-4">
-      <div>
-        <img src alt />
-      </div>
-      <div>
-        <img src alt />
-      </div>
-      <div>
-        <img src alt />
-      </div>
+    <div
+      class="d-flex flex-column flex-lg-row justify-content-around align-items-center justify-content-between w-100 h-100 mt-5"
+    >
+      <singleteam-component></singleteam-component>
+      <singleteam-component></singleteam-component>
+      <singleteam-component></singleteam-component>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import singleteamcomponent from "../team/singleTeam/SingleTeamMemberComponent";
+
+export default {
+  components: {
+    "singleteam-component": singleteamcomponent
+  }
+};
 </script>
 
 <style scoped>
@@ -37,6 +39,20 @@ h2,
 
 .intro {
   font-size: 1.5em;
+}
+
+#team {
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2,
+  .intro {
+    font-size: 1.2em;
+  }
 }
 
 /* Flaired edges, by Tomas Theunissen */
