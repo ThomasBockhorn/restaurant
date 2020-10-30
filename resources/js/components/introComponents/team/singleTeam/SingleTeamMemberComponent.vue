@@ -11,7 +11,7 @@
         <a href="#">More Info</a>
       </div>
       <div class="card-body text-center">
-        <h5 class="card-title">Patterson Felder</h5>
+        <h5 class="card-title">Patterson Bockhorn</h5>
         <p class="card-text">Master Chef</p>
       </div>
     </div>

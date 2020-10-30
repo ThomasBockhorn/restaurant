@@ -28,14 +28,14 @@
 
 <script>
 import navbarcomponent from "../navbar/NavbarComponent";
-import socialmediacomponent from "../socialmedia/SocialMediaComponent";
-import carouselcomponent from "../carousel/CarouselComponent";
-import headercomponent from "../header/HeaderComponent";
-import aboutcomponent from "../about/AboutComponent";
-import hourscomponent from "../hours/HoursComponent";
-import aboutmenucomponent from "../aboutMenu/AboutMenuComponent";
-import specialmenucomponent from "../specialmenu/SpecialMenuComponent";
-import teamcomponent from "../team/TeamComponent";
+import socialmediacomponent from "../introComponents/socialmedia/SocialMediaComponent";
+import carouselcomponent from "../introComponents/carousel/CarouselComponent";
+import headercomponent from "../introComponents/header/HeaderComponent";
+import aboutcomponent from "../introComponents/about/AboutComponent";
+import hourscomponent from "../introComponents/hours/HoursComponent";
+import aboutmenucomponent from "../introComponents/aboutMenu/AboutMenuComponent";
+import specialmenucomponent from "../introComponents/specialmenu/SpecialMenuComponent";
+import teamcomponent from "../introComponents/team/TeamComponent";
 
 export default {
   components: {
