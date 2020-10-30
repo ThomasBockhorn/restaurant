@@ -3,7 +3,7 @@
     <div class="card align-items-center">
       <img
         class="card-img-top rounded-circle mx-auto d-block"
-        style="width: 10rem; height: 10rem;"
+        style="width: 10rem; height: 11rem;"
         :src="chefOne"
         alt="chefOne"
       />

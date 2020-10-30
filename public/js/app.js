@@ -39790,7 +39790,7 @@ var render = function() {
     _c("div", { staticClass: "card align-items-center" }, [
       _c("img", {
         staticClass: "card-img-top rounded-circle mx-auto d-block",
-        staticStyle: { width: "10rem", height: "10rem" },
+        staticStyle: { width: "10rem", height: "11rem" },
         attrs: { src: _vm.chefOne, alt: "chefOne" }
       }),
       _vm._v(" "),
