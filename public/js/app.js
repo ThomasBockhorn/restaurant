@@ -2411,6 +2411,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2429,6 +2430,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7082,7 +7090,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.card[data-v-6090c6cb] {\n  border: none;\n}\n.card-text[data-v-6090c6cb] {\n  font-family: \"Peddana\", serif;\n  font-size: 1.5rem;\n}\n", ""]);
+exports.push([module.i, "\n.card[data-v-6090c6cb] {\n  border: none;\n}\n#hiddenLink[data-v-6090c6cb] {\n  width: 100%;\n  height: 100%;\n}\nh5[data-v-6090c6cb] {\n  font-family: \"Poiret One\", cursive;\n}\na[data-v-6090c6cb] {\n  color: black;\n  margin-top: 2em;\n  font-size: 1.5em;\n  font-family: \"Poiret One\", cursive;\n  font-weight: 1.5em;\n  text-decoration: none;\n}\nimg[data-v-6090c6cb] {\n  transition: all 0.3s ease-in-out;\n  opacity: 1;\n}\n.card:hover img[data-v-6090c6cb],\n.card:focus img[data-v-6090c6cb] {\n  transform: scale(1.02);\n  opacity: 0.5;\n}\n.card:hover .card-img-overlay[data-v-6090c6cb] {\n  color: #730d0d;\n}\n.card-img-overlay > a[data-v-6090c6cb] {\n  visibility: hidden;\n}\n.card-img-overlay:hover a[data-v-6090c6cb] {\n  visibility: visible;\n}\n", ""]);
 
 // exports
 
@@ -39901,6 +39909,8 @@ var render = function() {
         _vm._v(" "),
         _c("singleteam-component"),
         _vm._v(" "),
+        _c("singleteam-component"),
+        _vm._v(" "),
         _c("singleteam-component")
       ],
       1
@@ -39965,14 +39975,17 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "m-2" }, [
-    _c("div", { staticClass: "card", staticStyle: { width: "18rem" } }, [
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card align-items-center" }, [
       _c("img", {
-        staticClass: "card-img-top rounded-circle",
+        staticClass: "card-img-top rounded-circle mx-auto d-block",
+        staticStyle: { width: "10rem", height: "10rem" },
         attrs: { src: _vm.chefOne, alt: "chefOne" }
       }),
       _vm._v(" "),
-      _vm._m(0)
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1)
     ])
   ])
 }
@@ -39981,12 +39994,23 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("p", { staticClass: "card-text" }, [
-        _vm._v(
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quibusdam ullam odio? Id quibusdam quisquam voluptate, fugiat, eveniet ea voluptas nobis, minima modi reprehenderit maiores ratione. Recusandae nesciunt quis magni!"
-        )
-      ])
+    return _c(
+      "div",
+      {
+        staticClass: "card-img-overlay d-flex justify-content-center",
+        attrs: { id: "hiddenLink" }
+      },
+      [_c("a", { attrs: { href: "#" } }, [_vm._v("More Info")])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body text-center" }, [
+      _c("h5", { staticClass: "card-title" }, [_vm._v("Patterson Felder")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "card-text" }, [_vm._v("Master Chef")])
     ])
   }
 ]

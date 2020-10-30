@@ -1,11 +1,18 @@
 <template>
-  <div class="m-2">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top rounded-circle" :src="chefOne" alt="chefOne" />
-      <div class="card-body">
-        <p
-          class="card-text"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quibusdam ullam odio? Id quibusdam quisquam voluptate, fugiat, eveniet ea voluptas nobis, minima modi reprehenderit maiores ratione. Recusandae nesciunt quis magni!</p>
+  <div class="container">
+    <div class="card align-items-center">
+      <img
+        class="card-img-top rounded-circle mx-auto d-block"
+        style="width: 10rem; height: 10rem;"
+        :src="chefOne"
+        alt="chefOne"
+      />
+      <div id="hiddenLink" class="card-img-overlay d-flex justify-content-center">
+        <a href="#">More Info</a>
+      </div>
+      <div class="card-body text-center">
+        <h5 class="card-title">Patterson Felder</h5>
+        <p class="card-text">Master Chef</p>
       </div>
     </div>
   </div>
@@ -26,8 +33,44 @@ export default {
   border: none;
 }
 
-.card-text {
-  font-family: "Peddana", serif;
-  font-size: 1.5rem;
+#hiddenLink {
+  width: 100%;
+  height: 100%;
+}
+
+h5 {
+  font-family: "Poiret One", cursive;
+}
+
+a {
+  color: black;
+  margin-top: 2em;
+  font-size: 1.5em;
+  font-family: "Poiret One", cursive;
+  font-weight: 1.5em;
+  text-decoration: none;
+}
+
+img {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.card:hover img,
+.card:focus img {
+  transform: scale(1.02);
+  opacity: 0.5;
+}
+
+.card:hover .card-img-overlay {
+  color: #730d0d;
+}
+
+.card-img-overlay > a {
+  visibility: hidden;
+}
+
+.card-img-overlay:hover a {
+  visibility: visible;
 }
 </style>

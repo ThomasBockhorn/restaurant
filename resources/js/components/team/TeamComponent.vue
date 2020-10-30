@@ -16,6 +16,7 @@
       <singleteam-component></singleteam-component>
       <singleteam-component></singleteam-component>
       <singleteam-component></singleteam-component>
+      <singleteam-component></singleteam-component>
     </div>
   </div>
 </template>
