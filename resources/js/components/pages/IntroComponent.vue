@@ -23,6 +23,9 @@
     <section id="team">
       <team-component></team-component>
     </section>
+    <section id="reviews">
+      <review-component></review-component>
+    </section>
   </div>
 </template>
 
@@ -36,6 +39,7 @@ import hourscomponent from "../introComponents/hours/HoursComponent";
 import aboutmenucomponent from "../introComponents/aboutMenu/AboutMenuComponent";
 import specialmenucomponent from "../introComponents/specialmenu/SpecialMenuComponent";
 import teamcomponent from "../introComponents/team/TeamComponent";
+import reviewcomponent from "../introComponents/reviews/ReviewComponent";
 
 export default {
   components: {
@@ -47,7 +51,8 @@ export default {
     "hours-component": hourscomponent,
     "aboutmenu-component": aboutmenucomponent,
     "specialmenu-component": specialmenucomponent,
-    "team-component": teamcomponent
+    "team-component": teamcomponent,
+    "review-component": reviewcomponent
   }
 };
 </script>

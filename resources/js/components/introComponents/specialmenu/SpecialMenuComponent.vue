@@ -1,6 +1,6 @@
 <template>
   <div id="wrapper" class="w-100">
-    <div class="specialMenu stopParallax"></div>
+    <div class="specialMenu stopParallax pt-5"></div>
     <div class="d-flex align-items-center flex-column w-100 specialMenu">
       <div class="menuItem">
         <div id="header" class="d-flex align-items-center flex-column w-100 mt-3 mb-3">
@@ -51,7 +51,7 @@
         </h4>
       </div>
     </div>
-    <div class="specialMenu stopParallax"></div>
+    <div class="specialMenu stopParallax pb-5"></div>
   </div>
 </template>
 
