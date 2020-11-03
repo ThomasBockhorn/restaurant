@@ -39568,7 +39568,7 @@ var staticRenderFns = [
                     attrs: { type: "text", value: "Your email address" }
                   }),
                   _vm._v(" "),
-                  _c("button", { staticClass: "btn btn-primary" }, [
+                  _c("button", { staticClass: "btn btn-outline-primary" }, [
                     _vm._v(
                       "\n                        Submit\n                    "
                     )

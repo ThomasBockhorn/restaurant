@@ -27,7 +27,7 @@
                 >
                     <form action="" method="post">
                         <input type="text" value="Your email address" />
-                        <button class="btn btn-primary">
+                        <button class="btn btn-outline-primary">
                             Submit
                         </button>
                     </form>
