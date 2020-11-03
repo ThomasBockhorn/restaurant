@@ -26,6 +26,7 @@
     <section id="reviews">
       <review-component></review-component>
     </section>
+    <footer-component></footer-component>
   </div>
 </template>
 
@@ -40,6 +41,7 @@ import aboutmenucomponent from "../introComponents/aboutMenu/AboutMenuComponent"
 import specialmenucomponent from "../introComponents/specialmenu/SpecialMenuComponent";
 import teamcomponent from "../introComponents/team/TeamComponent";
 import reviewcomponent from "../introComponents/reviews/ReviewComponent";
+import footercomponent from "../footer/FooterComponent";
 
 export default {
   components: {
@@ -52,7 +54,8 @@ export default {
     "aboutmenu-component": aboutmenucomponent,
     "specialmenu-component": specialmenucomponent,
     "team-component": teamcomponent,
-    "review-component": reviewcomponent
+    "review-component": reviewcomponent,
+    "footer-component": footercomponent
   }
 };
 </script>

@@ -29,7 +29,7 @@ export default {
 .quote,
 p {
   color: white;
-  width: 50em;
+  width: 20em;
   font-size: 1em;
 }
 </style>
