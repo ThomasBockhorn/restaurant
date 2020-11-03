@@ -1,7 +1,10 @@
 <template>
   <div id="wrapper" class="w-100">
     <div class="review stopParallax pt-5 pb-5"></div>
-    <div class="d-flex align-items-center flex-column reviewScroll review stopParallax pt-5 pb-5">
+    <div
+      id="entries"
+      class="d-flex align-items-center flex-column reviewScroll review stopParallax pt-5 pb-5"
+    >
       <h1>Reviews</h1>
       <h2>What people are saying</h2>
       <hr class="style-seven" />
@@ -39,7 +42,7 @@ export default {
 }
 
 .review {
-  background-image: url("/img/paris.jpg");
+  background-image: url("/img/coffee.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,6 +54,7 @@ h1,
 h2 {
   color: white;
   font-family: "Poiret One", cursive;
+  font-size: 2em;
 }
 
 @media only screen and (max-width: 425px) {
@@ -61,10 +65,8 @@ h2 {
     display: none;
   }
   h1,
-  h2,
-  h3,
-  h4 {
-    font-size: 1em;
+  h2 {
+    font-size: 2em;
   }
 }
 

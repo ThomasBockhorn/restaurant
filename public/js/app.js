@@ -2167,6 +2167,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -7075,7 +7078,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#wrapper[data-v-6a0f6989] {\n  height: 100%;\n}\n.review[data-v-6a0f6989] {\n  background-image: url(\"/img/paris.jpg\");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100%;\n}\nh1[data-v-6a0f6989],\nh2[data-v-6a0f6989] {\n  color: white;\n  font-family: \"Poiret One\", cursive;\n}\n@media only screen and (max-width: 425px) {\n.reviewScroll[data-v-6a0f6989] {\n    background-attachment: scroll;\n}\n.stopParallax[data-v-6a0f6989] {\n    display: none;\n}\nh1[data-v-6a0f6989],\n  h2[data-v-6a0f6989],\n  h3[data-v-6a0f6989],\n  h4[data-v-6a0f6989] {\n    font-size: 1em;\n}\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-6a0f6989] {\n  overflow: visible; /* For IE */\n  height: 2em;\n  width: 20em;\n  border-style: solid;\n  border-color: white;\n  border-width: 1px 0 0 0;\n  border-radius: 20px;\n}\n.style-seven[data-v-6a0f6989]:before {\n  /* Not really supposed to work, but does */\n  display: block;\n  content: \"\";\n  height: 30px;\n  margin-top: -31px;\n  border-style: solid;\n  border-color: white;\n  border-width: 0 0 1px 0;\n  border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\n#wrapper[data-v-6a0f6989] {\n  height: 100%;\n}\n.review[data-v-6a0f6989] {\n  background-image: url(\"/img/coffee.jpg\");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100%;\n}\nh1[data-v-6a0f6989],\nh2[data-v-6a0f6989] {\n  color: white;\n  font-family: \"Poiret One\", cursive;\n  font-size: 2em;\n}\n@media only screen and (max-width: 425px) {\n.reviewScroll[data-v-6a0f6989] {\n    background-attachment: scroll;\n}\n.stopParallax[data-v-6a0f6989] {\n    display: none;\n}\nh1[data-v-6a0f6989],\n  h2[data-v-6a0f6989] {\n    font-size: 2em;\n}\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-6a0f6989] {\n  overflow: visible; /* For IE */\n  height: 2em;\n  width: 20em;\n  border-style: solid;\n  border-color: white;\n  border-width: 1px 0 0 0;\n  border-radius: 20px;\n}\n.style-seven[data-v-6a0f6989]:before {\n  /* Not really supposed to work, but does */\n  display: block;\n  content: \"\";\n  height: 30px;\n  margin-top: -31px;\n  border-style: solid;\n  border-color: white;\n  border-width: 0 0 1px 0;\n  border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -7094,7 +7097,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "\nspan[data-v-5c13befa] {\n  color: white;\n}\n.quote[data-v-5c13befa],\np[data-v-5c13befa] {\n  color: white;\n  width: 20em;\n  font-weight: 2em;\n  font: 2em;\n}\n", ""]);
+exports.push([module.i, "\nspan[data-v-5c13befa] {\n  color: white;\n}\n.quote[data-v-5c13befa],\np[data-v-5c13befa] {\n  color: white;\n  width: 50em;\n  font-size: 1em;\n}\n", ""]);
 
 // exports
 
@@ -39705,7 +39708,8 @@ var render = function() {
       "div",
       {
         staticClass:
-          "d-flex align-items-center flex-column reviewScroll review stopParallax pt-5 pb-5"
+          "d-flex align-items-center flex-column reviewScroll review stopParallax pt-5 pb-5",
+        attrs: { id: "entries" }
       },
       [
         _c("h1", [_vm._v("Reviews")]),
