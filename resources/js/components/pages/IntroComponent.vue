@@ -31,8 +31,8 @@
 </template>
 
 <script>
-import navbarcomponent from "../introComponents/navbar/NavbarComponent";
-import socialmediacomponent from "../introComponents/socialmedia/SocialMediaComponent";
+import navbarcomponent from "../navbar/NavbarComponent";
+import socialmediacomponent from "../socialmedia/SocialMediaComponent";
 import carouselcomponent from "../introComponents/carousel/CarouselComponent";
 import headercomponent from "../introComponents/header/HeaderComponent";
 import aboutcomponent from "../introComponents/about/AboutComponent";
@@ -41,7 +41,7 @@ import aboutmenucomponent from "../introComponents/aboutMenu/AboutMenuComponent"
 import specialmenucomponent from "../introComponents/specialmenu/SpecialMenuComponent";
 import teamcomponent from "../introComponents/team/TeamComponent";
 import reviewcomponent from "../introComponents/reviews/ReviewComponent";
-import footercomponent from "../introComponents/footer/FooterComponent";
+import footercomponent from "../footer/FooterComponent";
 
 export default {
     components: {

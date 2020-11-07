@@ -16,8 +16,6 @@ export default {};
     text-align: center;
     position: absolute;
     font-family: "Poiret One", cursive;
-}
-.header {
     margin-top: 20em;
 }
 

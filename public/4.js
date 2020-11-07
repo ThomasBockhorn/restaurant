@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[4],{
 
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/MenuComponent.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************************!*\
@@ -61,7 +61,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nimg[data-v-b1609890] {\n    width: 100%;\n    height: 100%;\n}\n.headerImage[data-v-b1609890] {\n    height: 40em;\n}\n.title[data-v-b1609890] {\n    z-index: 9;\n    color: white;\n    text-align: center;\n    position: absolute;\n}\n", ""]);
+exports.push([module.i, "\nimg[data-v-b1609890] {\n    width: 100%;\n    height: 100%;\n}\n.headerImage[data-v-b1609890] {\n    height: 40em;\n}\n.title[data-v-b1609890] {\n    z-index: 9;\n    color: white;\n    text-align: center;\n    position: absolute;\n    margin-top: 15em;\n}\n", ""]);
 
 // exports
 
@@ -116,12 +116,13 @@ var render = function() {
   return _c("div", [
     _c(
       "header",
+      { staticClass: "m-3" },
       [
         _c("socialmedia-component"),
         _vm._v(" "),
         _c("navbar-component"),
         _vm._v(" "),
-        _c("div", { staticClass: "m-3 headerImage d-flex flex-column" }, [
+        _c("div", { staticClass: "headerImage d-flex flex-column" }, [
           _c("img", { attrs: { src: _vm.imageHeader, alt: _vm.imageHeader } }),
           _vm._v(" "),
           _vm._m(0)
@@ -138,9 +139,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("h1", { staticClass: "title" }, [_vm._v("Hot Dishes")])
-    ])
+    return _c(
+      "div",
+      { staticClass: "d-flex flex-column title text-center w-100" },
+      [_c("h1", [_vm._v("Hot Dishes")])]
+    )
   }
 ]
 render._withStripped = true
