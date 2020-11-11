@@ -59,6 +59,8 @@ export default {};
 </script>
 
 <style scoped>
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+
 #footer {
     background-color: black;
 }

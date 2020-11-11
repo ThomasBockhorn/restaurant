@@ -25,6 +25,12 @@ Vue.component(
 );
 
 /**
+ * Adds fontawesome to the project
+ */
+import "@fortawesome/fontawesome-free/css/all.css";
+import "@fortawesome/fontawesome-free/js/all.js";
+
+/**
  *We have to import the vue router to the app
  */
 import { routes } from "./routes.js";
