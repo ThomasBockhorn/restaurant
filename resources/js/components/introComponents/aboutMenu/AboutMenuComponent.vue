@@ -9,7 +9,7 @@
             />
         </div>
         <div class="d-flex flex-column w-100 ml-2 mt-0 mb-auto">
-            <div class="d-flex align-items-center flex-column w-100">
+            <div id="title" class="d-flex align-items-center flex-column w-100">
                 <h1>About Our Menu</h1>
                 <h2>Our Cuisine Philosophy</h2>
                 <hr class="style-seven" />
@@ -42,9 +42,10 @@ export default {
 </script>
 
 <style scoped>
-h1,
-h2 {
+#title > h1,
+#title > h2 {
     font-family: "Poiret One", cursive;
+    color: black !important;
 }
 
 p {

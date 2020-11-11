@@ -10,6 +10,9 @@
             </div>
             <div class="headerImage pt-5 pb-5"></div>
         </header>
+        <section id="entree">
+            <entree-component></entree-component>
+        </section>
 
         <footer>
             <footer-component></footer-component>
@@ -21,12 +24,14 @@
 import navbar from "../navbar/NavbarComponent";
 import footer from "../footer/FooterComponent";
 import socialmedia from "../socialmedia/SocialMediaComponent";
+import entreecomponent from "../menuComponents/entreeComponent/EntreeComponent";
 
 export default {
     components: {
         "navbar-component": navbar,
         "footer-component": footer,
-        "socialmedia-component": socialmedia
+        "socialmedia-component": socialmedia,
+        "entree-component": entreecomponent
     }
 };
 </script>

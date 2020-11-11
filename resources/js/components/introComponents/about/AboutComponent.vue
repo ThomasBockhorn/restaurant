@@ -39,6 +39,7 @@ export default {
 h1,
 h2 {
     font-family: "Poiret One", cursive;
+    color: black !important;
 }
 
 p {

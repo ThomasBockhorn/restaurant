@@ -531,7 +531,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\nh1[data-v-2d30636a],\nh2[data-v-2d30636a] {\n    font-family: \"Poiret One\", cursive;\n}\np[data-v-2d30636a] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-2d30636a] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: black;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-2d30636a]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: black;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\nh1[data-v-2d30636a],\nh2[data-v-2d30636a] {\n    font-family: \"Poiret One\", cursive;\n    color: black !important;\n}\np[data-v-2d30636a] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-2d30636a] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: black;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-2d30636a]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: black;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -550,7 +550,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\nh1[data-v-305c5828],\nh2[data-v-305c5828] {\n    font-family: \"Poiret One\", cursive;\n}\np[data-v-305c5828] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5em;\n}\n#image[data-v-305c5828] {\n    height: 40em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-305c5828] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: black;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-305c5828]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: black;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\n#title > h1[data-v-305c5828],\n#title > h2[data-v-305c5828] {\n    font-family: \"Poiret One\", cursive;\n    color: black !important;\n}\np[data-v-305c5828] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5em;\n}\n#image[data-v-305c5828] {\n    height: 40em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-305c5828] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: black;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-305c5828]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: black;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -1173,7 +1173,10 @@ var staticRenderFns = [
       [
         _c(
           "div",
-          { staticClass: "d-flex align-items-center flex-column w-100" },
+          {
+            staticClass: "d-flex align-items-center flex-column w-100",
+            attrs: { id: "title" }
+          },
           [
             _c("h1", [_vm._v("About Our Menu")]),
             _vm._v(" "),
