@@ -352,7 +352,7 @@ var staticRenderFns = [
         "div",
         {
           staticClass:
-            "d-flex justify-content-center justify-content-around pt-5 w-100",
+            "d-flex justify-content-center justify-content-around pt-5 w-100 flex-md-row flex-column",
           attrs: { id: "footer" }
         },
         [

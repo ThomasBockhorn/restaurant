@@ -2,7 +2,7 @@
     <div>
         <div
             id="footer"
-            class="d-flex justify-content-center justify-content-around pt-5 w-100"
+            class="d-flex justify-content-center justify-content-around pt-5 w-100 flex-md-row flex-column"
         >
             <div class="pt-5">
                 <h1 class="text-center">Find Us</h1>
