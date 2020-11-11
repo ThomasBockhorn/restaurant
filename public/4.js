@@ -39,11 +39,6 @@ __webpack_require__.r(__webpack_exports__);
     "navbar-component": _navbar_NavbarComponent__WEBPACK_IMPORTED_MODULE_0__["default"],
     "footer-component": _footer_FooterComponent__WEBPACK_IMPORTED_MODULE_1__["default"],
     "socialmedia-component": _socialmedia_SocialMediaComponent__WEBPACK_IMPORTED_MODULE_2__["default"]
-  },
-  data: function data() {
-    return {
-      imageHeader: "/img/alcohol.jpg"
-    };
   }
 });
 
@@ -61,7 +56,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nimg[data-v-b1609890] {\n    width: 100%;\n    height: 100%;\n}\n.headerImage[data-v-b1609890] {\n    height: 40em;\n}\n.title[data-v-b1609890] {\n    z-index: 9;\n    color: white;\n    text-align: center;\n    position: absolute;\n    margin-top: 15em;\n}\n", ""]);
+exports.push([module.i, "\nheader[data-v-b1609890] {\n    height: 100%;\n}\n.headerImage[data-v-b1609890] {\n    height: 100%;\n    background-image: url(\"/img/bar-b-que.jpg\");\n    background-attachment: fixed;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n.title[data-v-b1609890] {\n    z-index: 9;\n    color: white;\n    text-align: center;\n    padding-top: 8em;\n    padding-bottom: 8em;\n}\nh1[data-v-b1609890],\nh2[data-v-b1609890] {\n    color: white;\n    font-family: \"Poiret One\", cursive;\n    font-size: 3em;\n}\n", ""]);
 
 // exports
 
@@ -122,11 +117,11 @@ var render = function() {
         _vm._v(" "),
         _c("navbar-component"),
         _vm._v(" "),
-        _c("div", { staticClass: "headerImage d-flex flex-column" }, [
-          _c("img", { attrs: { src: _vm.imageHeader, alt: _vm.imageHeader } }),
-          _vm._v(" "),
-          _vm._m(0)
-        ])
+        _c("div", { staticClass: "headerImage pt-5 pb-5" }),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "headerImage pt-5 pb-5" })
       ],
       1
     ),
@@ -141,8 +136,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "d-flex flex-column title text-center w-100" },
-      [_c("h1", [_vm._v("Hot Dishes")])]
+      { staticClass: "d-flex flex-column title text-center w-100 headerImage" },
+      [
+        _c("h1", { staticClass: "pt-5" }, [_vm._v("Hot Dishes")]),
+        _vm._v(" "),
+        _c("h2", { staticClass: "pb-5" }, [
+          _vm._v("Try one of these savory, flavorful dishes")
+        ])
+      ]
     )
   }
 ]

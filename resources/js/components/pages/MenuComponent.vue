@@ -3,12 +3,12 @@
         <header class="m-3">
             <socialmedia-component></socialmedia-component>
             <navbar-component></navbar-component>
-            <div class="headerImage d-flex flex-column">
-                <img :src="imageHeader" :alt="imageHeader" />
-                <div class="d-flex flex-column title text-center w-100">
-                    <h1>Hot Dishes</h1>
-                </div>
+            <div class="headerImage pt-5 pb-5"></div>
+            <div class="d-flex flex-column title text-center w-100 headerImage">
+                <h1 class="pt-5">Hot Dishes</h1>
+                <h2 class="pb-5">Try one of these savory, flavorful dishes</h2>
             </div>
+            <div class="headerImage pt-5 pb-5"></div>
         </header>
 
         <footer>
@@ -27,30 +27,36 @@ export default {
         "navbar-component": navbar,
         "footer-component": footer,
         "socialmedia-component": socialmedia
-    },
-    data: () => {
-        return {
-            imageHeader: "/img/alcohol.jpg"
-        };
     }
 };
 </script>
 
 <style scoped>
-img {
-    width: 100%;
+header {
     height: 100%;
 }
 
 .headerImage {
-    height: 40em;
+    height: 100%;
+    background-image: url("/img/bar-b-que.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title {
     z-index: 9;
     color: white;
     text-align: center;
-    position: absolute;
-    margin-top: 15em;
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+h1,
+h2 {
+    color: white;
+    font-family: "Poiret One", cursive;
+    font-size: 3em;
 }
 </style>
