@@ -390,6 +390,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -683,7 +686,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\nh1[data-v-39f83d34],\nh2[data-v-39f83d34],\n.intro[data-v-39f83d34] {\n  font-family: \"Poiret One\", cursive;\n}\n.intro[data-v-39f83d34] {\n  font-size: 1.5em;\n}\n#team[data-v-39f83d34] {\n  background-color: white;\n}\n@media screen and (max-width: 768px) {\nh1[data-v-39f83d34] {\n    font-size: 3em;\n}\nh2[data-v-39f83d34],\n  .intro[data-v-39f83d34] {\n    font-size: 1.2em;\n}\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-39f83d34] {\n  overflow: visible; /* For IE */\n  height: 2em;\n  width: 20em;\n  border-style: solid;\n  border-color: black;\n  border-width: 1px 0 0 0;\n  border-radius: 20px;\n}\n.style-seven[data-v-39f83d34]:before {\n  /* Not really supposed to work, but does */\n  display: block;\n  content: \"\";\n  height: 30px;\n  margin-top: -31px;\n  border-style: solid;\n  border-color: black;\n  border-width: 0 0 1px 0;\n  border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\nh1[data-v-39f83d34],\nh2[data-v-39f83d34] {\n    font-family: \"Poiret One\", cursive;\n}\n.intro[data-v-39f83d34] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5em;\n}\n#team[data-v-39f83d34] {\n    background-color: white;\n}\n@media screen and (max-width: 768px) {\nh1[data-v-39f83d34] {\n        font-size: 3em;\n}\nh2[data-v-39f83d34],\n    .intro[data-v-39f83d34] {\n        font-size: 1.5em;\n}\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-39f83d34] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: black;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-39f83d34]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: black;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -1703,9 +1706,9 @@ var staticRenderFns = [
       "div",
       { staticClass: "d-flex flex-column align-items-center mt-2 pt-2" },
       [
-        _c("p", { staticClass: "intro" }, [
+        _c("p", { staticClass: "intro ml-2" }, [
           _vm._v(
-            "Our top-quality chefs are here to delight and serve you. Our food is second to none."
+            "\n            Our top-quality chefs are here to delight and serve you. Our\n            food is second to none.\n        "
           )
         ])
       ]
