@@ -13,8 +13,8 @@
 </template>
 
 <style scoped>
-i {
-    color: white;
+a {
+    color: white !important;
 }
 
 @media screen and (max-width: 768px) {

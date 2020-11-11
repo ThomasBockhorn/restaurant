@@ -59,14 +59,12 @@ export default {};
 </script>
 
 <style scoped>
-@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
-
 #footer {
     background-color: black;
 }
 
 h1,
-i {
+a {
     font-family: "Poiret One", cursive;
     color: white;
 }

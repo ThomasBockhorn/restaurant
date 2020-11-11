@@ -187,10 +187,10 @@ __webpack_require__.r(__webpack_exports__);
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
-exports.push([module.i, "@import url(/font-awesome-4.6.3/css/font-awesome.min.css);", ""]);
+
 
 // module
-exports.push([module.i, "\n#footer[data-v-4134e3ce] {\n    background-color: black;\n}\nh1[data-v-4134e3ce],\ni[data-v-4134e3ce] {\n    font-family: \"Poiret One\", cursive;\n    color: white;\n}\n#address[data-v-4134e3ce] {\n    color: white;\n}\n#copywrite[data-v-4134e3ce] {\n    background-color: #3b3b3a;\n    color: white;\n    height: 15em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-4134e3ce] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: white;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-4134e3ce]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: white;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\n#footer[data-v-4134e3ce] {\n    background-color: black;\n}\nh1[data-v-4134e3ce],\na[data-v-4134e3ce] {\n    font-family: \"Poiret One\", cursive;\n    color: white;\n}\n#address[data-v-4134e3ce] {\n    color: white;\n}\n#copywrite[data-v-4134e3ce] {\n    background-color: #3b3b3a;\n    color: white;\n    height: 15em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-4134e3ce] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: white;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-4134e3ce]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: white;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -228,7 +228,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\ni[data-v-bddba3ae] {\n    color: white;\n}\n@media screen and (max-width: 768px) {\nul[data-v-bddba3ae] {\n        display: none;\n}\n}\n", ""]);
+exports.push([module.i, "\na[data-v-bddba3ae] {\n    color: white !important;\n}\n@media screen and (max-width: 768px) {\nul[data-v-bddba3ae] {\n        display: none;\n}\n}\n", ""]);
 
 // exports
 
