@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="m-3">
+        <header class="mt-3">
             <socialmedia-component></socialmedia-component>
             <navbar-component></navbar-component>
             <div class="headerImage pt-5 pb-5"></div>
