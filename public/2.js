@@ -81,38 +81,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -179,7 +147,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\nh3[data-v-51fd99e4],\np[data-v-51fd99e4] {\n    font-family: \"Peddana\", serif;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-51fd99e4] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: black;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-51fd99e4]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: black;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\nh3[data-v-51fd99e4],\np[data-v-51fd99e4] {\n  font-family: \"Peddana\", serif;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-51fd99e4] {\n  overflow: visible; /* For IE */\n  height: 2em;\n  width: 20em;\n  border-style: solid;\n  border-color: black;\n  border-width: 1px 0 0 0;\n  border-radius: 20px;\n}\n.style-seven[data-v-51fd99e4]:before {\n  /* Not really supposed to work, but does */\n  display: block;\n  content: \"\";\n  height: 30px;\n  margin-top: -31px;\n  border-style: solid;\n  border-color: black;\n  border-width: 0 0 1px 0;\n  border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -287,192 +255,137 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "d-flex flex-column justify-content-center pt-5" },
-      [
-        _c("div", { staticClass: "d-flex justify-content-center w-100" }, [
-          _c("hr", { staticClass: "style-seven" })
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "container pt-4 w-100 align-content-center justify-content-center"
-          },
-          [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-6" }, [
-                _c(
-                  "div",
-                  { staticClass: "d-flex flex-row", attrs: { id: "entree" } },
-                  [
-                    _c("div", { staticClass: "d-flex flex-column" }, [
-                      _c("h3", [
-                        _vm._v(
-                          "\n                            Ribeye Steak\n                        "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v("Char Grilled Juicy Steak with Garlic Butter")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("span", [
-                      _vm._v(
-                        "........................................................................................"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("h3", { staticClass: "ml-1" }, [_vm._v("$130")])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6" }, [
-                _c(
-                  "div",
-                  { staticClass: "d-flex flex-row", attrs: { id: "entree" } },
-                  [
-                    _c("div", { staticClass: "d-flex flex-column" }, [
-                      _c("h3", [
-                        _vm._v(
-                          "\n                            Salmon Steak with Hollandaise Sauce\n                        "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v("Grilled Salmon with a Hollandaise Sauce")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("span", [
-                      _vm._v(
-                        "........................................................................................"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("h3", { staticClass: "ml-1" }, [_vm._v("$180")])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6" }, [
-                _c(
-                  "div",
-                  { staticClass: "d-flex flex-row", attrs: { id: "entree" } },
-                  [
-                    _c("div", { staticClass: "d-flex flex-column" }, [
-                      _c("h3", [
-                        _vm._v(
-                          "\n                            Vegatable Fritata\n                        "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [_vm._v("Fresh vegatables with mushrooms")])
-                    ]),
-                    _vm._v(" "),
-                    _c("span", [
-                      _vm._v(
-                        "........................................................................................"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("h3", { staticClass: "ml-1" }, [_vm._v("$90")])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6" }, [
-                _c(
-                  "div",
-                  { staticClass: "d-flex flex-row", attrs: { id: "entree" } },
-                  [
-                    _c("div", { staticClass: "d-flex flex-column" }, [
-                      _c("h3", [
-                        _vm._v(
-                          "\n                            Ribeye Steak\n                        "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v("Char Grilled Juicy Steak with Garlic Butter")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("span", [
-                      _vm._v(
-                        "........................................................................................"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("h3", { staticClass: "ml-1" }, [_vm._v("$130")])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6" }, [
-                _c(
-                  "div",
-                  { staticClass: "d-flex flex-row", attrs: { id: "entree" } },
-                  [
-                    _c("div", { staticClass: "d-flex flex-column" }, [
-                      _c("h3", [
-                        _vm._v(
-                          "\n                            Ribeye Steak\n                        "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v("Char Grilled Juicy Steak with Garlic Butter")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("span", [
-                      _vm._v(
-                        "........................................................................................"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("h3", { staticClass: "ml-1" }, [_vm._v("$130")])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6" }, [
-                _c(
-                  "div",
-                  { staticClass: "d-flex flex-row", attrs: { id: "entree" } },
-                  [
-                    _c("div", { staticClass: "d-flex flex-column" }, [
-                      _c("h3", [
-                        _vm._v(
-                          "\n                            Ribeye Steak\n                        "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v("Char Grilled Juicy Steak with Garlic Butter")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("span", [
-                      _vm._v(
-                        "........................................................................................"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("h3", { staticClass: "ml-1" }, [_vm._v("$130")])
-                  ]
-                )
-              ])
-            ])
-          ]
-        )
-      ]
-    )
+    return _c("div", { staticClass: "d-flex flex-column pt-5" }, [
+      _c("div", { staticClass: "d-flex justify-content-center w-100" }, [
+        _c("hr", { staticClass: "style-seven" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "d-flex align-content-center container" }, [
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c("div", { staticClass: "col-md-6 w-40" }, [
+            _c(
+              "div",
+              {
+                staticClass: "d-flex flex-row justify-content-around",
+                attrs: { id: "entree" }
+              },
+              [
+                _c("div", { staticClass: "d-flex flex-column" }, [
+                  _c("h3", [_vm._v("Ribeye Steak")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("Char Grilled Juicy Steak with Garlic Butter")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "ml-auto" }, [_vm._v("$130")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6 w-40" }, [
+            _c(
+              "div",
+              {
+                staticClass: "d-flex flex-row justify-content-around",
+                attrs: { id: "entree" }
+              },
+              [
+                _c("div", { staticClass: "d-flex flex-column" }, [
+                  _c("h3", [_vm._v("Salmon Steak with Hollandaise Sauce")]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Grilled Salmon with a Hollandaise Sauce")])
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "ml-auto" }, [_vm._v("$180")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c(
+              "div",
+              {
+                staticClass: "d-flex flex-row justify-content-around",
+                attrs: { id: "entree" }
+              },
+              [
+                _c("div", { staticClass: "d-flex flex-column" }, [
+                  _c("h3", [_vm._v("Vegatable Fritata")]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Fresh vegatables with mushrooms")])
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "ml-auto" }, [_vm._v("$90")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c(
+              "div",
+              {
+                staticClass: "d-flex flex-row justify-content-around",
+                attrs: { id: "entree" }
+              },
+              [
+                _c("div", { staticClass: "d-flex flex-column" }, [
+                  _c("h3", [_vm._v("Ribeye Steak")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("Char Grilled Juicy Steak with Garlic Butter")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "ml-auto" }, [_vm._v("$130")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c(
+              "div",
+              {
+                staticClass: "d-flex flex-row justify-content-around",
+                attrs: { id: "entree" }
+              },
+              [
+                _c("div", { staticClass: "d-flex flex-column" }, [
+                  _c("h3", [_vm._v("Ribeye Steak")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("Char Grilled Juicy Steak with Garlic Butter")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "ml-auto" }, [_vm._v("$130")])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c(
+              "div",
+              {
+                staticClass: "d-flex flex-row justify-content-around",
+                attrs: { id: "entree" }
+              },
+              [
+                _c("div", { staticClass: "d-flex flex-column" }, [
+                  _c("h3", [_vm._v("Ribeye Steak")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("Char Grilled Juicy Steak with Garlic Butter")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "ml-auto" }, [_vm._v("$130")])
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
   }
 ]
 render._withStripped = true
