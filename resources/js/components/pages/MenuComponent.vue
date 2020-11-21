@@ -17,8 +17,15 @@
     <div class="dessertImage d-flex flex-column title text-center w-100">
       <h1 class="pt-2">Desserts</h1>
     </div>
-    <section>
+    <section id="dessert">
       <dessert-component></dessert-component>
+    </section>
+    <div class="drinksImage pt-5"></div>
+    <div class="drinksImage d-flex flex-column title text-center w-100">
+      <h1 class="pt-2">Drinks</h1>
+    </div>
+    <section id="drinks">
+      <drinks-component></drinks-component>
     </section>
     <footer>
       <footer-component></footer-component>
@@ -32,6 +39,7 @@ import footer from "../footer/FooterComponent";
 import socialmedia from "../socialmedia/SocialMediaComponent";
 import entreecomponent from "../menuComponents/entreeComponent/EntreeComponent";
 import dessertcomponent from "../menuComponents/dessertComponent/DessertComponent";
+import drinkscomponent from "../menuComponents/drinksComponent/DrinksComponent";
 
 export default {
   components: {
@@ -39,7 +47,8 @@ export default {
     "footer-component": footer,
     "socialmedia-component": socialmedia,
     "entree-component": entreecomponent,
-    "dessert-component": dessertcomponent
+    "dessert-component": dessertcomponent,
+    "drinks-component": drinkscomponent
   }
 };
 </script>
@@ -60,6 +69,15 @@ header {
 
 .dessertImage {
   background-image: url("/img/brownie.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.drinksImage {
+  background-image: url("/img/wine.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
