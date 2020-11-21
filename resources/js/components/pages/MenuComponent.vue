@@ -3,7 +3,7 @@
     <header class="mt-3">
       <socialmedia-component></socialmedia-component>
       <navbar-component></navbar-component>
-      <div class="headerImage pt-5 pb-5"></div>
+      <div class="headerImage pt-5 pb-5 stopParallax"></div>
       <div class="d-flex flex-column title text-center w-100 headerImage">
         <h1 class="pt-5">Hot Dishes</h1>
         <h2 class="pb-5">Try one of these savory, flavorful dishes</h2>
@@ -13,14 +13,14 @@
     <section id="entree">
       <entree-component></entree-component>
     </section>
-    <div class="dessertImage pt-5"></div>
+    <div class="dessertImage pt-5 stopParallax"></div>
     <div class="dessertImage d-flex flex-column title text-center w-100">
       <h1 class="pt-2">Desserts</h1>
     </div>
     <section id="dessert">
       <dessert-component></dessert-component>
     </section>
-    <div class="drinksImage pt-5"></div>
+    <div class="drinksImage pt-5 stopParallax"></div>
     <div class="drinksImage d-flex flex-column title text-center w-100">
       <h1 class="pt-2">Drinks</h1>
     </div>
@@ -98,5 +98,16 @@ h2 {
   color: white;
   font-family: "Poiret One", cursive;
   font-size: 3em;
+}
+
+@media only screen and (max-width: 425px) {
+  .headerImage,
+  .dessertImage,
+  .drinksImage {
+    background-attachment: scroll;
+  }
+  .stopParallax {
+    display: none;
+  }
 }
 </style>

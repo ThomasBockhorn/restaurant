@@ -393,7 +393,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nheader[data-v-b1609890] {\n  height: 100%;\n}\n.headerImage[data-v-b1609890] {\n  height: 100%;\n  background-image: url(\"/img/bar-b-que.jpg\");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.dessertImage[data-v-b1609890] {\n  background-image: url(\"/img/brownie.jpg\");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100%;\n}\n.drinksImage[data-v-b1609890] {\n  background-image: url(\"/img/wine.jpg\");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100%;\n}\n.title[data-v-b1609890] {\n  z-index: 9;\n  color: white;\n  text-align: center;\n  padding-top: 8em;\n  padding-bottom: 8em;\n}\nh1[data-v-b1609890],\nh2[data-v-b1609890] {\n  color: white;\n  font-family: \"Poiret One\", cursive;\n  font-size: 3em;\n}\n", ""]);
+exports.push([module.i, "\nheader[data-v-b1609890] {\n  height: 100%;\n}\n.headerImage[data-v-b1609890] {\n  height: 100%;\n  background-image: url(\"/img/bar-b-que.jpg\");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.dessertImage[data-v-b1609890] {\n  background-image: url(\"/img/brownie.jpg\");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100%;\n}\n.drinksImage[data-v-b1609890] {\n  background-image: url(\"/img/wine.jpg\");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100%;\n}\n.title[data-v-b1609890] {\n  z-index: 9;\n  color: white;\n  text-align: center;\n  padding-top: 8em;\n  padding-bottom: 8em;\n}\nh1[data-v-b1609890],\nh2[data-v-b1609890] {\n  color: white;\n  font-family: \"Poiret One\", cursive;\n  font-size: 3em;\n}\n@media only screen and (max-width: 425px) {\n.headerImage[data-v-b1609890],\n  .dessertImage[data-v-b1609890],\n  .drinksImage[data-v-b1609890] {\n    background-attachment: scroll;\n}\n.stopParallax[data-v-b1609890] {\n    display: none;\n}\n}\n", ""]);
 
 // exports
 
@@ -1033,7 +1033,7 @@ var render = function() {
         _vm._v(" "),
         _c("navbar-component"),
         _vm._v(" "),
-        _c("div", { staticClass: "headerImage pt-5 pb-5" }),
+        _c("div", { staticClass: "headerImage pt-5 pb-5 stopParallax" }),
         _vm._v(" "),
         _vm._m(0),
         _vm._v(" "),
@@ -1044,13 +1044,13 @@ var render = function() {
     _vm._v(" "),
     _c("section", { attrs: { id: "entree" } }, [_c("entree-component")], 1),
     _vm._v(" "),
-    _c("div", { staticClass: "dessertImage pt-5" }),
+    _c("div", { staticClass: "dessertImage pt-5 stopParallax" }),
     _vm._v(" "),
     _vm._m(1),
     _vm._v(" "),
     _c("section", { attrs: { id: "dessert" } }, [_c("dessert-component")], 1),
     _vm._v(" "),
-    _c("div", { staticClass: "drinksImage pt-5" }),
+    _c("div", { staticClass: "drinksImage pt-5 stopParallax" }),
     _vm._v(" "),
     _vm._m(2),
     _vm._v(" "),
