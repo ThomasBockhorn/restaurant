@@ -13,6 +13,11 @@ const routes = [
         path: "/menu",
         name: "menu",
         component: () => import("../js/components/pages/MenuComponent.vue")
+    },
+    {
+        path: "/gallery",
+        name: "gallery",
+        component: () => import("../js/components/pages/GalleryComponent.vue")
     }
 ];
 

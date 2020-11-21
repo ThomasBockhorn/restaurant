@@ -132,8 +132,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -209,7 +207,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.box-shadow[data-v-375cb08e] {\n    box-shadow: -1px 2px 50px -25px #000000;\n}\na[data-v-375cb08e] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5rem;\n    margin-right: 1em;\n    text-transform: uppercase;\n}\n#title[data-v-375cb08e] {\n    font-family: \"Poiret One\", cursive;\n    font-size: 2em;\n}\n.navbar-collapse .navbar-nav[data-v-375cb08e] {\n    padding-left: 1em;\n}\n.background-color[data-v-375cb08e] {\n    background-color: white !important;\n    transition: background-color 250ms linear;\n}\n.navbar-toggler[data-v-375cb08e]:focus,\n.navbar-toggler[data-v-375cb08e]:active,\n.navbar-toggler-icon[data-v-375cb08e]:focus {\n    outline: none;\n    box-shadow: none;\n}\n@media screen and (max-width: 768px) {\n.navbar-collapse[data-v-375cb08e] {\n        background-color: white;\n}\n.navbar-collapse > ul > li > a[data-v-375cb08e] {\n        color: black !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n.box-shadow[data-v-375cb08e] {\n  box-shadow: -1px 2px 50px -25px #000000;\n}\na[data-v-375cb08e] {\n  font-family: \"Peddana\", serif;\n  font-size: 1.5rem;\n  margin-right: 1em;\n  text-transform: uppercase;\n}\n#title[data-v-375cb08e] {\n  font-family: \"Poiret One\", cursive;\n  font-size: 2em;\n}\n.navbar-collapse .navbar-nav[data-v-375cb08e] {\n  padding-left: 1em;\n}\n.background-color[data-v-375cb08e] {\n  background-color: white !important;\n  transition: background-color 250ms linear;\n}\n.navbar-toggler[data-v-375cb08e]:focus,\n.navbar-toggler[data-v-375cb08e]:active,\n.navbar-toggler-icon[data-v-375cb08e]:focus {\n  outline: none;\n  box-shadow: none;\n}\n@media screen and (max-width: 768px) {\n.navbar-collapse[data-v-375cb08e] {\n    background-color: white;\n}\n.navbar-collapse > ul > li > a[data-v-375cb08e] {\n    color: black !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -503,7 +501,7 @@ var render = function() {
                   "router-link",
                   { staticClass: "nav-link", attrs: { to: { name: "home" } } },
                   [
-                    _vm._v("Home\n                    "),
+                    _vm._v("\n          Home\n          "),
                     _c("span", { staticClass: "sr-only" }, [
                       _vm._v("(current)")
                     ])
@@ -526,15 +524,29 @@ var render = function() {
               1
             ),
             _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "nav-item" },
+              [
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "nav-link",
+                    attrs: { to: { name: "gallery" } }
+                  },
+                  [_vm._v("Gallery")]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
             _vm._m(1),
             _vm._v(" "),
             _vm._m(2),
             _vm._v(" "),
             _vm._m(3),
             _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _vm._m(5)
+            _vm._m(4)
           ])
         ]
       )
@@ -561,16 +573,6 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon ml-1" })]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Gallery")
-      ])
-    ])
   },
   function() {
     var _vm = this

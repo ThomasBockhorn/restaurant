@@ -58406,6 +58406,12 @@ var routes = [{
   component: function component() {
     return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ../js/components/pages/MenuComponent.vue */ "./resources/js/components/pages/MenuComponent.vue"));
   }
+}, {
+  path: "/gallery",
+  name: "gallery",
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../js/components/pages/GalleryComponent.vue */ "./resources/js/components/pages/GalleryComponent.vue"));
+  }
 }];
 
 
