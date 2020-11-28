@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex w-100">
+  <div class="d-flex">
     <img class="w-100" :src="mainPhoto" :alt="mainPhoto" />
     <div class="header flex-column justify-content-center w-100">
       <h1 class="text-center">Gallery</h1>
@@ -29,5 +29,14 @@ img {
   position: absolute;
   font-family: "Poiret One", cursive;
   margin-top: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    height: 20em;
+  }
+  .header {
+    margin-top: 30%;
+  }
 }
 </style>

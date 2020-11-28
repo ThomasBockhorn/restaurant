@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="w-100 p-3">
+    <header class="mt-3">
       <navbar-component></navbar-component>
       <header-component></header-component>
     </header>

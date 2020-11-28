@@ -41,7 +41,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      dishOne: "/img/chicken.jpg",
+      dishTwo: "/img/bean-stew.jpg",
+      dishThree: "/img/steak.jpg"
+    };
+  }
+});
 
 /***/ }),
 
@@ -100,7 +120,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\nimg[data-v-6ba54c00] {\n  filter: brightness(50%);\n  height: 35em;\n}\n.header[data-v-6ba54c00] {\n  z-index: 9;\n  color: white;\n  text-align: center;\n  position: absolute;\n  font-family: \"Poiret One\", cursive;\n  margin-top: 15%;\n}\n", ""]);
+exports.push([module.i, "\nimg[data-v-6ba54c00] {\n  filter: brightness(50%);\n  height: 35em;\n}\n.header[data-v-6ba54c00] {\n  z-index: 9;\n  color: white;\n  text-align: center;\n  position: absolute;\n  font-family: \"Poiret One\", cursive;\n  margin-top: 15%;\n}\n@media screen and (max-width: 768px) {\nimg[data-v-6ba54c00] {\n    height: 20em;\n}\n.header[data-v-6ba54c00] {\n    margin-top: 30%;\n}\n}\n", ""]);
 
 // exports
 
@@ -152,7 +172,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "d-flex w-100" }, [
+  return _c("div", { staticClass: "d-flex" }, [
     _c("img", {
       staticClass: "w-100",
       attrs: { src: _vm.mainPhoto, alt: _vm.mainPhoto }
@@ -194,7 +214,30 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("Gallery")])
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row w-100" }, [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("img", {
+          staticClass: "w-100 h-auto",
+          attrs: { src: _vm.dishOne, alt: _vm.dishOne }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("img", {
+          staticClass: "w-100 h-auto",
+          attrs: { src: _vm.dishTwo, alt: _vm.dishTwo }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-3" }, [
+        _c("img", {
+          staticClass: "w-100 h-auto",
+          attrs: { src: _vm.dishThree, alt: _vm.dishThree }
+        })
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -221,7 +264,7 @@ var render = function() {
   return _c("div", [
     _c(
       "header",
-      { staticClass: "w-100 p-3" },
+      { staticClass: "mt-3" },
       [_c("navbar-component"), _vm._v(" "), _c("header-component")],
       1
     ),
