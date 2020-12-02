@@ -153,7 +153,7 @@ __webpack_require__.r(__webpack_exports__);
       modalImage.src = imgID.srcElement.src;
     },
     abort: function abort(event) {
-      console.log("this works!!"); //event.srcElement.style.display = "none";
+      event.srcElement.style.display = "none";
     }
   }
 });
@@ -234,7 +234,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\nimg[data-v-91891e28] {\n  padding: 1em;\n  cursor: pointer;\n  transition: 0.3s;\n}\nimg[data-v-91891e28]:hover {\n  opacity: 0.7;\n}\n\n/**styling for modal */\n.modal[data-v-91891e28] {\n  display: none;\n  position: fixed;\n  z-index: 999;\n  padding-top: 100px;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  background-color: rgb(0, 0, 0);\n  background-color: rgba(0, 0, 0, 0.9);\n}\n.modal-content[data-v-91891e28] {\n  margin: auto;\n  display: block;\n  width: 80%;\n  max-width: 700px;\n}\n.modal-content[data-v-91891e28] {\n  -webkit-animation-name: zoom-data-v-91891e28;\n  -webkit-animation-duration: 0.6s;\n  animation-name: zoom-data-v-91891e28;\n  animation-duration: 0.6s;\n}\n@-webkit-keyframes zoom-data-v-91891e28 {\nfrom {\n    -webkit-transform: scale(0);\n}\nto {\n    -webkit-transform: scale(1);\n}\n}\n@keyframes zoom-data-v-91891e28 {\nfrom {\n    transform: scale(0);\n}\nto {\n    transform: scale(1);\n}\n}\n.close[data-v-91891e28] {\n  position: absolute;\n  top: 15px;\n  right: 35px;\n  color: #f1f1f1;\n  font-size: 40px;\n  font-weight: bold;\n  transition: 0.3s;\n}\n.close[data-v-91891e28]:hover,\n.close[data-v-91891e28]:focus {\n  color: #bbb;\n  text-decoration: none;\n  cursor: pointer;\n}\n@media only screen and (max-width: 700px) {\n.modal-content[data-v-91891e28] {\n    width: 100%;\n}\n}\n", ""]);
+exports.push([module.i, "\nimg[data-v-91891e28] {\n  padding: 1em;\n  cursor: pointer;\n  transition: 0.3s;\n}\nimg[data-v-91891e28]:hover {\n  opacity: 0.7;\n}\n\n/**styling for modal */\n.modal[data-v-91891e28] {\n  display: none;\n  position: fixed;\n  z-index: 999999;\n  padding-top: 100px;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  background-color: rgb(0, 0, 0);\n  background-color: rgba(0, 0, 0, 0.9);\n}\n.modal-content[data-v-91891e28] {\n  margin: auto;\n  display: block;\n  width: 80%;\n  max-width: 700px;\n  pointer-events: none;\n}\n.modal-content[data-v-91891e28] {\n  -webkit-animation-name: zoom-data-v-91891e28;\n  -webkit-animation-duration: 0.6s;\n  animation-name: zoom-data-v-91891e28;\n  animation-duration: 0.6s;\n}\n@-webkit-keyframes zoom-data-v-91891e28 {\nfrom {\n    -webkit-transform: scale(0);\n}\nto {\n    -webkit-transform: scale(1);\n}\n}\n@keyframes zoom-data-v-91891e28 {\nfrom {\n    transform: scale(0);\n}\nto {\n    transform: scale(1);\n}\n}\n.close[data-v-91891e28] {\n  position: absolute;\n  top: 15px;\n  right: 35px;\n  color: #f1f1f1;\n  font-size: 40px;\n  font-weight: bold;\n  transition: 0.3s;\n  z-index: 2000000;\n  pointer-events: none;\n}\n@media only screen and (max-width: 700px) {\n.modal-content[data-v-91891e28] {\n    width: 100%;\n}\n}\n", ""]);
 
 // exports
 
@@ -483,22 +483,34 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "modal", attrs: { id: "modal" } }, [
-      _c(
-        "span",
-        {
-          staticClass: "close",
-          on: {
-            click: function($event) {
-              return _vm.abort($event)
-            }
+    _c(
+      "div",
+      {
+        staticClass: "modal",
+        attrs: { id: "modal" },
+        on: {
+          click: function($event) {
+            return _vm.abort($event)
           }
-        },
-        [_vm._v("×")]
-      ),
-      _vm._v(" "),
-      _c("img", { staticClass: "modal-content", attrs: { id: "modalImage" } })
-    ])
+        }
+      },
+      [
+        _c(
+          "button",
+          {
+            staticClass: "close",
+            on: {
+              click: function($event) {
+                return _vm.abort($event)
+              }
+            }
+          },
+          [_vm._v("×")]
+        ),
+        _vm._v(" "),
+        _c("img", { staticClass: "modal-content", attrs: { id: "modalImage" } })
+      ]
+    )
   ])
 }
 var staticRenderFns = []

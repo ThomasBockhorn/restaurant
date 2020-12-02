@@ -83,8 +83,8 @@
     </div>
 
     <!--image Modal-->
-    <div id="modal" class="modal">
-      <span @click="abort($event)" class="close">&times;</span>
+    <div id="modal" class="modal" @click="abort($event)">
+      <button @click="abort($event)" class="close">&times;</button>
       <img class="modal-content" id="modalImage" />
     </div>
   </section>
@@ -116,9 +116,7 @@ export default {
       modalImage.src = imgID.srcElement.src;
     },
     abort(event) {
-      console.log("this works!!");
-
-      //event.srcElement.style.display = "none";
+      event.srcElement.style.display = "none";
     }
   }
 };
@@ -139,7 +137,7 @@ img:hover {
 .modal {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 999999;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -155,6 +153,7 @@ img:hover {
   display: block;
   width: 80%;
   max-width: 700px;
+  pointer-events: none;
 }
 
 .modal-content {
@@ -190,13 +189,8 @@ img:hover {
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+  z-index: 2000000;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 700px) {
