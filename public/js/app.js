@@ -58270,7 +58270,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]({
   scrollBehavior: function scrollBehavior() {
     return {
       x: 0,
-      y: 0
+      y: 0,
+      behavior: "smooth"
     };
   }
 });
