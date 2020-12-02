@@ -58266,7 +58266,13 @@ Vue.component("main-component", __webpack_require__(/*! ./components/MainCompone
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]);
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]({
   mode: "history",
-  routes: _routes_js__WEBPACK_IMPORTED_MODULE_2__["routes"]
+  routes: _routes_js__WEBPACK_IMPORTED_MODULE_2__["routes"],
+  scrollBehavior: function scrollBehavior() {
+    return {
+      x: 0,
+      y: 0
+    };
+  }
 });
 /**
  * Next, we will create a fresh Vue application instance and attach it to
