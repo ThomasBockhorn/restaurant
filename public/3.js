@@ -74,61 +74,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -144,7 +89,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    modal: function modal(dishOne, imgID) {
+    modal: function modal(imgID) {
       //Gets the modal and modal Image
       var modal = document.getElementById("modal");
       var modalImage = document.getElementById("modalImage"); //display modal
@@ -367,7 +312,7 @@ var render = function() {
             attrs: { src: _vm.dishOne, alt: _vm.dishOne, height: "100%" },
             on: {
               click: function($event) {
-                return _vm.modal(_vm.dishOne, $event)
+                return _vm.modal($event)
               }
             }
           })
@@ -379,7 +324,7 @@ var render = function() {
             attrs: { src: _vm.dishTwo, alt: _vm.dishTwo, height: "50%" },
             on: {
               click: function($event) {
-                return _vm.modal(_vm.dishTwo, $event)
+                return _vm.modal($event)
               }
             }
           }),
@@ -389,7 +334,7 @@ var render = function() {
             attrs: { src: _vm.dishFour, alt: _vm.dishFour, height: "50%" },
             on: {
               click: function($event) {
-                return _vm.modal(_vm.dishFour, $event)
+                return _vm.modal($event)
               }
             }
           })
@@ -401,7 +346,7 @@ var render = function() {
             attrs: { src: _vm.dishThree, alt: _vm.dishThree, height: "50%" },
             on: {
               click: function($event) {
-                return _vm.modal(_vm.dishThree, $event)
+                return _vm.modal($event)
               }
             }
           }),
@@ -411,7 +356,7 @@ var render = function() {
             attrs: { src: _vm.dishFive, alt: _vm.dishFive, height: "50%" },
             on: {
               click: function($event) {
-                return _vm.modal(_vm.dishFive, $event)
+                return _vm.modal($event)
               }
             }
           })
@@ -427,7 +372,7 @@ var render = function() {
             },
             on: {
               click: function($event) {
-                return _vm.modal(_vm.dishSix, $event)
+                return _vm.modal($event)
               }
             }
           })
@@ -443,7 +388,7 @@ var render = function() {
             },
             on: {
               click: function($event) {
-                return _vm.modal(_vm.dishSeven, $event)
+                return _vm.modal($event)
               }
             }
           })
@@ -459,7 +404,7 @@ var render = function() {
             },
             on: {
               click: function($event) {
-                return _vm.modal(_vm.dishEight, $event)
+                return _vm.modal($event)
               }
             }
           })
@@ -475,7 +420,7 @@ var render = function() {
             },
             on: {
               click: function($event) {
-                return _vm.modal(_vm.dishNine, $event)
+                return _vm.modal($event)
               }
             }
           })

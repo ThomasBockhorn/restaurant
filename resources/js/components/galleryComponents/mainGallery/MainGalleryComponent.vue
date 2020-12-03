@@ -3,85 +3,30 @@
     <div class="container">
       <div class="row w-100 justify-content-around">
         <div class="col-md-6">
-          <img
-            :src="dishOne"
-            :alt="dishOne"
-            class="w-100"
-            height="100%"
-            @click="modal(dishOne, $event)"
-          />
+          <img :src="dishOne" :alt="dishOne" class="w-100" height="100%" @click="modal($event)" />
         </div>
         <div class="col-md-3 d-flex flex-column">
-          <img
-            :src="dishTwo"
-            :alt="dishTwo"
-            class="w-100"
-            height="50%"
-            @click="modal(dishTwo, $event)"
-          />
-          <img
-            :src="dishFour"
-            :alt="dishFour"
-            class="w-100"
-            height="50%"
-            @click="modal(dishFour, $event)"
-          />
+          <img :src="dishTwo" :alt="dishTwo" class="w-100" height="50%" @click="modal($event)" />
+          <img :src="dishFour" :alt="dishFour" class="w-100" height="50%" @click="modal($event)" />
         </div>
         <div class="col-md-3 d-flex flex-column">
-          <img
-            :src="dishThree"
-            :alt="dishThree"
-            class="w-100"
-            height="50%"
-            @click="modal(dishThree, $event)"
-          />
-          <img
-            :src="dishFive"
-            :alt="dishFive"
-            class="w-100"
-            height="50%"
-            @click="modal(dishFive, $event)"
-          />
+          <img :src="dishThree" :alt="dishThree" class="w-100" height="50%" @click="modal($event)" />
+          <img :src="dishFive" :alt="dishFive" class="w-100" height="50%" @click="modal($event)" />
         </div>
         <div class="col-md-3">
-          <img
-            :src="dishSix"
-            :alt="dishSix"
-            height="100%"
-            width="100%"
-            @click="modal(dishSix, $event)"
-          />
+          <img :src="dishSix" :alt="dishSix" height="100%" width="100%" @click="modal($event)" />
         </div>
         <div class="col-md-3">
-          <img
-            :src="dishSeven"
-            :alt="dishSeven"
-            height="100%"
-            width="100%"
-            @click="modal(dishSeven, $event)"
-          />
+          <img :src="dishSeven" :alt="dishSeven" height="100%" width="100%" @click="modal($event)" />
         </div>
         <div class="col-md-3">
-          <img
-            :src="dishEight"
-            :alt="dishEight"
-            height="100%"
-            width="100%"
-            @click="modal(dishEight, $event)"
-          />
+          <img :src="dishEight" :alt="dishEight" height="100%" width="100%" @click="modal($event)" />
         </div>
         <div class="col-md-3">
-          <img
-            :src="dishNine"
-            :alt="dishNine"
-            height="100%"
-            width="100%"
-            @click="modal(dishNine, $event)"
-          />
+          <img :src="dishNine" :alt="dishNine" height="100%" width="100%" @click="modal($event)" />
         </div>
       </div>
     </div>
-
     <!--image Modal-->
     <div id="modal" class="modal" @click="abort($event)">
       <button @click="abort($event)" class="close">&times;</button>
@@ -106,7 +51,7 @@ export default {
     };
   },
   methods: {
-    modal(dishOne, imgID) {
+    modal(imgID) {
       //Gets the modal and modal Image
       var modal = document.getElementById("modal");
       var modalImage = document.getElementById("modalImage");
