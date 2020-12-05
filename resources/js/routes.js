@@ -18,6 +18,12 @@ const routes = [
         path: "/gallery",
         name: "gallery",
         component: () => import("../js/components/pages/GalleryComponent.vue")
+    },
+    {
+        path: "/reservations",
+        name: "reservations",
+        component: () =>
+            import("../js/components/pages/ReservationComponent.vue")
     }
 ];
 

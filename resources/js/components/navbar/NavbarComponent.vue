@@ -36,7 +36,7 @@
           <router-link class="nav-link" :to="{ name: 'gallery'}">Gallery</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Reservation</a>
+          <router-link class="nav-link" :to="{ name: 'reservations' }">Reservation</router-link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Shop</a>

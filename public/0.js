@@ -491,13 +491,27 @@ var render = function() {
               1
             ),
             _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "nav-item" },
+              [
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "nav-link",
+                    attrs: { to: { name: "reservations" } }
+                  },
+                  [_vm._v("Reservation")]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
             _vm._m(1),
             _vm._v(" "),
             _vm._m(2),
             _vm._v(" "),
-            _vm._m(3),
-            _vm._v(" "),
-            _vm._m(4)
+            _vm._m(3)
           ])
         ]
       )
@@ -524,16 +538,6 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon ml-1" })]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Reservation")
-      ])
-    ])
   },
   function() {
     var _vm = this
