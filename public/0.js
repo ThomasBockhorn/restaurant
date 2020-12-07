@@ -501,7 +501,21 @@ var render = function() {
               1
             ),
             _vm._v(" "),
-            _vm._m(1)
+            _c(
+              "li",
+              { staticClass: "nav-item" },
+              [
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "nav-link",
+                    attrs: { to: { name: "contact" } }
+                  },
+                  [_vm._v("Contact")]
+                )
+              ],
+              1
+            )
           ])
         ]
       )
@@ -528,16 +542,6 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon ml-1" })]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-        _vm._v("Contact")
-      ])
-    ])
   }
 ]
 render._withStripped = true

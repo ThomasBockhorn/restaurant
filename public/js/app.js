@@ -58425,6 +58425,12 @@ var routes = [{
   component: function component() {
     return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, /*! ../js/components/pages/ReservationComponent.vue */ "./resources/js/components/pages/ReservationComponent.vue"));
   }
+}, {
+  path: "/contact",
+  name: "contact",
+  component: function component() {
+    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ../js/components/pages/ContactComponent.vue */ "./resources/js/components/pages/ContactComponent.vue"));
+  }
 }];
 
 
