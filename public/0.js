@@ -201,7 +201,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.box-shadow[data-v-375cb08e] {\n  box-shadow: -1px 2px 50px -25px #000000;\n}\na[data-v-375cb08e] {\n  font-family: \"Peddana\", serif;\n  font-size: 1.5rem;\n  margin-right: 1em;\n  text-transform: uppercase;\n}\n#title[data-v-375cb08e] {\n  font-family: \"Poiret One\", cursive;\n  font-size: 2em;\n}\n.navbar-collapse .navbar-nav[data-v-375cb08e] {\n  padding-left: 1em;\n}\n.background-color[data-v-375cb08e] {\n  background-color: white !important;\n  transition: background-color 250ms linear;\n}\n.navbar-toggler[data-v-375cb08e]:focus,\n.navbar-toggler[data-v-375cb08e]:active,\n.navbar-toggler-icon[data-v-375cb08e]:focus {\n  outline: none;\n  box-shadow: none;\n}\n@media screen and (max-width: 768px) {\n.navbar-collapse[data-v-375cb08e] {\n    background-color: white;\n}\n.navbar-collapse > ul > li > a[data-v-375cb08e] {\n    color: black !important;\n}\n}\n", ""]);
+exports.push([module.i, "\n.box-shadow[data-v-375cb08e] {\n  box-shadow: -1px 2px 50px -25px #000000;\n}\na[data-v-375cb08e] {\n  font-family: \"Peddana\", serif;\n  font-size: 1.5rem;\n  margin-right: 1em;\n}\n.nav-link[data-v-375cb08e] {\n  text-transform: uppercase;\n}\n#title[data-v-375cb08e] {\n  font-family: \"Poiret One\", cursive;\n  font-size: 2em;\n}\n.navbar-collapse .navbar-nav[data-v-375cb08e] {\n  padding-left: 1em;\n}\n.background-color[data-v-375cb08e] {\n  background-color: white !important;\n  transition: background-color 250ms linear;\n}\n.navbar-toggler[data-v-375cb08e]:focus,\n.navbar-toggler[data-v-375cb08e]:active,\n.navbar-toggler-icon[data-v-375cb08e]:focus {\n  outline: none;\n  box-shadow: none;\n}\n@media screen and (max-width: 768px) {\n.navbar-collapse[data-v-375cb08e] {\n    background-color: white;\n}\n.navbar-collapse > ul > li > a[data-v-375cb08e] {\n    color: black !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -423,8 +423,11 @@ var render = function() {
     },
     [
       _c(
-        "span",
-        { staticClass: "navbar-brand mb-0 h1 ml-3", attrs: { id: "title" } },
+        "router-link",
+        {
+          staticClass: "navbar-brand mb-0 h1 ml-3",
+          attrs: { id: "title", to: { name: "home" } }
+        },
         [_vm._v("Hercule")]
       ),
       _vm._v(" "),
@@ -519,7 +522,8 @@ var render = function() {
           ])
         ]
       )
-    ]
+    ],
+    1
   )
 }
 var staticRenderFns = [

@@ -8,7 +8,7 @@
             'box-shadow': boxShadow
         }"
   >
-    <span id="title" class="navbar-brand mb-0 h1 ml-3">Hercule</span>
+    <router-link id="title" class="navbar-brand mb-0 h1 ml-3" :to="{ name: 'home'}">Hercule</router-link>
     <button
       class="navbar-toggler"
       type="button"
@@ -100,6 +100,9 @@ a {
   font-family: "Peddana", serif;
   font-size: 1.5rem;
   margin-right: 1em;
+}
+
+.nav-link {
   text-transform: uppercase;
 }
 
