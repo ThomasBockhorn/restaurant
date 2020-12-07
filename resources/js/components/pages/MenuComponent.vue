@@ -1,7 +1,6 @@
 <template>
   <div>
     <header class="mt-3">
-      <socialmedia-component></socialmedia-component>
       <navbar-component></navbar-component>
       <div class="headerImage pt-5 pb-5 stopParallax"></div>
       <div class="d-flex flex-column title text-center w-100 headerImage">
@@ -36,7 +35,6 @@
 <script>
 import navbar from "../navbar/NavbarComponent";
 import footer from "../footer/FooterComponent";
-import socialmedia from "../socialmedia/SocialMediaComponent";
 import entreecomponent from "../menuComponents/entreeComponent/EntreeComponent";
 import dessertcomponent from "../menuComponents/dessertComponent/DessertComponent";
 import drinkscomponent from "../menuComponents/drinksComponent/DrinksComponent";
@@ -45,7 +43,6 @@ export default {
   components: {
     "navbar-component": navbar,
     "footer-component": footer,
-    "socialmedia-component": socialmedia,
     "entree-component": entreecomponent,
     "dessert-component": dessertcomponent,
     "drinks-component": drinkscomponent
