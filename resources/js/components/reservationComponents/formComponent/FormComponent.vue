@@ -7,7 +7,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-md-6">
           <h3>Book a Table</h3>
           <form action="post" method="post">
             <div class="form-group d-flex flex-column">
@@ -22,7 +22,7 @@
             </div>
           </form>
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <h3>Contact Details</h3>
           <form action method="post">
             <div class="form-group d-flex flex-column">
@@ -37,22 +37,29 @@
             </div>
           </form>
         </div>
-        <div class="col-12 justify-content-center">
-          <button class="btn btn-primary">Submit</button>
+        <div class="d-flex col-12 justify-content-center mt-5 mb-5">
+          <button class="btn btn-outline-dark">Make a Reservation</button>
         </div>
       </div>
     </div>
+    <hours-component></hours-component>
   </div>
 </template>
 
 <script>
-export default {};
+import hourscomponent from "../../introComponents/hours/HoursComponent";
+export default {
+  components: {
+    "hours-component": hourscomponent
+  }
+};
 </script>
 
 <style scoped>
 h1,
 h2,
-h3 {
+h3,
+button {
   font-family: "Poiret One", cursive;
 }
 
