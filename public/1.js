@@ -388,11 +388,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -686,7 +681,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\nh1[data-v-39f83d34],\nh2[data-v-39f83d34] {\n    font-family: \"Poiret One\", cursive;\n}\n.intro[data-v-39f83d34] {\n    font-family: \"Peddana\", serif;\n    font-size: 1.5em;\n}\n#team[data-v-39f83d34] {\n    background-color: white;\n}\n@media screen and (max-width: 768px) {\nh1[data-v-39f83d34] {\n        font-size: 3em;\n}\nh2[data-v-39f83d34],\n    .intro[data-v-39f83d34] {\n        font-size: 1.5em;\n}\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-39f83d34] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: black;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-39f83d34]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: black;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\nh1[data-v-39f83d34],\nh2[data-v-39f83d34] {\n  font-family: \"Poiret One\", cursive;\n}\n.intro[data-v-39f83d34] {\n  font-family: \"Peddana\", serif;\n  font-size: 1.5em;\n}\n#team[data-v-39f83d34] {\n  background-color: white;\n}\n@media screen and (max-width: 768px) {\nh1[data-v-39f83d34] {\n    font-size: 3em;\n}\nh2[data-v-39f83d34],\n  .intro[data-v-39f83d34] {\n    font-size: 1.5em;\n}\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-39f83d34] {\n  overflow: visible; /* For IE */\n  height: 2em;\n  width: 20em;\n  border-style: solid;\n  border-color: black;\n  border-width: 1px 0 0 0;\n  border-radius: 20px;\n}\n.style-seven[data-v-39f83d34]:before {\n  /* Not really supposed to work, but does */\n  display: block;\n  content: \"\";\n  height: 30px;\n  margin-top: -31px;\n  border-style: solid;\n  border-color: black;\n  border-width: 0 0 1px 0;\n  border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -1667,17 +1662,9 @@ var render = function() {
       "div",
       {
         staticClass:
-          "d-flex flex-column flex-lg-row justify-content-around align-items-center justify-content-between w-100 h-100 mt-5"
+          "d-flex flex-column flex-lg-row align-items-center justify-content-around w-100 h-100 mt-5"
       },
-      [
-        _c("singleteam-component"),
-        _vm._v(" "),
-        _c("singleteam-component"),
-        _vm._v(" "),
-        _c("singleteam-component"),
-        _vm._v(" "),
-        _c("singleteam-component")
-      ],
+      [_c("singleteam-component")],
       1
     )
   ])
@@ -1712,7 +1699,7 @@ var staticRenderFns = [
       [
         _c("p", { staticClass: "intro ml-2" }, [
           _vm._v(
-            "\n            Our top-quality chefs are here to delight and serve you. Our\n            food is second to none.\n        "
+            "\n      Our top-quality chefs are here to delight and serve you. Our\n      food is second to none.\n    "
           )
         ])
       ]
@@ -1773,7 +1760,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-body text-center" }, [
-      _c("h5", { staticClass: "card-title" }, [_vm._v("Patterson Bockhorn")]),
+      _c("h5", { staticClass: "card-title" }, [_vm._v("Piper Bockhorn")]),
       _vm._v(" "),
       _c("p", { staticClass: "card-text" }, [_vm._v("Master Chef")])
     ])
