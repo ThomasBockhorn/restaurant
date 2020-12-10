@@ -58417,7 +58417,7 @@ var routes = [{
   path: "/gallery",
   name: "gallery",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, /*! ../js/components/pages/GalleryComponent.vue */ "./resources/js/components/pages/GalleryComponent.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ../js/components/pages/GalleryComponent.vue */ "./resources/js/components/pages/GalleryComponent.vue"));
   }
 }, {
   path: "/reservations",
@@ -58429,7 +58429,7 @@ var routes = [{
   path: "/contact",
   name: "contact",
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ../js/components/pages/ContactComponent.vue */ "./resources/js/components/pages/ContactComponent.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, /*! ../js/components/pages/ContactComponent.vue */ "./resources/js/components/pages/ContactComponent.vue"));
   }
 }];
 

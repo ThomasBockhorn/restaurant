@@ -56,15 +56,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -182,7 +173,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#footer[data-v-4134e3ce] {\n    background-color: black;\n}\nh1[data-v-4134e3ce],\na[data-v-4134e3ce] {\n    font-family: \"Poiret One\", cursive;\n    color: white;\n}\n#address[data-v-4134e3ce] {\n    color: white;\n}\n#copywrite[data-v-4134e3ce] {\n    background-color: #3b3b3a;\n    color: white;\n    height: 15em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-4134e3ce] {\n    overflow: visible; /* For IE */\n    height: 2em;\n    width: 20em;\n    border-style: solid;\n    border-color: white;\n    border-width: 1px 0 0 0;\n    border-radius: 20px;\n}\n.style-seven[data-v-4134e3ce]:before {\n    /* Not really supposed to work, but does */\n    display: block;\n    content: \"\";\n    height: 30px;\n    margin-top: -31px;\n    border-style: solid;\n    border-color: white;\n    border-width: 0 0 1px 0;\n    border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, "\n#footer[data-v-4134e3ce] {\n  background-color: black;\n}\nh1[data-v-4134e3ce],\na[data-v-4134e3ce] {\n  font-family: \"Poiret One\", cursive;\n  color: white;\n}\n#address[data-v-4134e3ce] {\n  color: white;\n}\n#copywrite[data-v-4134e3ce] {\n  background-color: #3b3b3a;\n  color: white;\n  height: 15em;\n}\n\n/* Flaired edges, by Tomas Theunissen */\n.style-seven[data-v-4134e3ce] {\n  overflow: visible; /* For IE */\n  height: 2em;\n  width: 20em;\n  border-style: solid;\n  border-color: white;\n  border-width: 1px 0 0 0;\n  border-radius: 20px;\n}\n.style-seven[data-v-4134e3ce]:before {\n  /* Not really supposed to work, but does */\n  display: block;\n  content: \"\";\n  height: 30px;\n  margin-top: -31px;\n  border-style: solid;\n  border-color: white;\n  border-width: 0 0 1px 0;\n  border-radius: 20px;\n}\n", ""]);
 
 // exports
 
@@ -306,7 +297,7 @@ var staticRenderFns = [
               "div",
               {
                 staticClass:
-                  "d-flex mt-5 justify-content-center justify-content-around"
+                  "d-flex justify-content-center justify-content-around"
               },
               [
                 _c("a", { attrs: { href: "#" } }, [
@@ -331,7 +322,7 @@ var staticRenderFns = [
               "div",
               {
                 staticClass:
-                  "d-flex mt-5 justify-content-center justify-content-around"
+                  "d-flex justify-content-center justify-content-around"
               },
               [
                 _c("form", { attrs: { action: "", method: "post" } }, [
@@ -340,9 +331,7 @@ var staticRenderFns = [
                   }),
                   _vm._v(" "),
                   _c("button", { staticClass: "btn btn-outline-primary" }, [
-                    _vm._v(
-                      "\n                        Submit\n                    "
-                    )
+                    _vm._v("Submit")
                   ])
                 ])
               ]
@@ -355,16 +344,17 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "d-flex mt-5 justify-content-center flex-column",
+                staticClass: "d-flex justify-content-center flex-column",
                 attrs: { id: "address" }
               },
               [
-                _c("p", { staticClass: "text-center" }, [
-                  _vm._v("1456 Shallow River Road")
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "text-center" }, [
-                  _vm._v("Elba, Alabama 34565")
+                _c("address", { staticClass: "text-center" }, [
+                  _c("br"),
+                  _vm._v("1456 Shallow River Road\n          "),
+                  _c("br"),
+                  _vm._v("Elba, Alabama 34565\n          "),
+                  _c("br"),
+                  _vm._v("youremail@email.com\n        ")
                 ])
               ]
             )
